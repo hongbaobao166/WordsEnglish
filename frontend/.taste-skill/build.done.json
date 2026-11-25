@@ -1,0 +1,11 @@
+{
+ "page": null,
+ "url": "http://localhost:8080/",
+ "root": null,
+ "kind": "software",
+ "category": "ứng dụng học tiếng Anh",
+ "primary": "đăng nhập",
+ "rounds": 3,
+ "start": "2026-11-24T13:00:18.712Z",
+ "by": "gate.mjs --start"
+}

@@ -1,0 +1,41 @@
+{
+  "fingerprint": "6920f8f04a1701daf045a263dae29105c8637a355de38e1d59f06f87b0a09283",
+  "phases": {
+    "01-design": {
+      "status": "passed",
+      "repairs": 0,
+      "logs": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\01-design\\20261124_163300_249390",
+      "planner_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\01-design\\20261124_163300_249390\\plan.md",
+      "developer_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\01-design\\20261124_163300_249390\\developer_0.md",
+      "tester_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\01-design\\20261124_163300_249390\\tester_0.md",
+      "reviewer_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\01-design\\20261124_163300_249390\\reviewer_0.md"
+    },
+    "02-database": {
+      "status": "blocked",
+      "repairs": 0,
+      "logs": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\02-database\\20261124_163417_264127",
+      "planner_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\02-database\\20261124_163417_264127\\plan.md",
+      "feedback": "I’ll review the phase artifacts and run the available checks without changing application source or touching an existing database.\nThe installed dependencies are internally consistent, but Docker’s daemon is unavailable and PostgreSQL executables aren’t on PATH. I’ll test Django startup with explicitly fake local settings; no database connection will be attempted intentionally.\n**Backend phase verification is blocked by the local environment.** No application source was modified, and no database was accessed.\n\nEvidence from this QA run:\n\n- `python --version` reported Python 3.15.2.\n- From `backend/`, `.\\.venv\\Scripts\\python.exe -m pip check` reported no broken requirements.\n- With fake local database environment values, both `.\\.venv\\Scripts\\python.exe manage.py check` and `.\\.venv\\Scripts\\python.exe manage.py makemigrations --check --dry-run` failed during startup: Windows application control blocked the psycopg binary, and `libpq` was not found.\n- `docker info --format '{{.ServerVersion}}'` failed because the Docker daemon was unavailable; PostgreSQL executables were not found on PATH.\n- Migration application, seeding, repeatability, and persisted-data verification were **not run** because no dedicated test database and usable driver were confirmed.\n\nTo unblock, provide an approved usable PostgreSQL driver or `libpq`, and provision a confirmed dedicated local PostgreSQL test database and credentials. Then run the checks, migration, seed twice, and persisted-data query documented in `backend/README.md`.\n\nSTATUS: BLOCKED\n**Review outcome: blocked by PostgreSQL verification.** The inspected source contains the requested models, initial migration, PostgreSQL settings, synthetic seed command, and setup instructions. No source was edited and no commands were run during this review.\n\nThe supplied evidence reports that Django checks and migration consistency checks passed only with a non-connecting dummy backend. PostgreSQL startup failed because application control blocked the psycopg binary and `libpq` was unavailable. Applying migrations, running the seed twice, and verifying persisted data remain unverified.\n\nTo unblock, provide an approved PostgreSQL driver or `libpq` and a confirmed dedicated local test database with credentials. Then run the PostgreSQL checks, migration, repeat seed, and persisted-data query documented in `backend/README.md`.\n\nSTATUS: BLOCKED"
+    },
+    "03-backend": {
+      "status": "pending",
+      "repairs": 0
+    },
+    "04-frontend": {
+      "status": "pending",
+      "repairs": 0
+    },
+    "05-integration": {
+      "status": "pending",
+      "repairs": 0
+    },
+    "06-testing": {
+      "status": "pending",
+      "repairs": 0
+    },
+    "07-docs": {
+      "status": "pending",
+      "repairs": 0
+    }
+  }
+}

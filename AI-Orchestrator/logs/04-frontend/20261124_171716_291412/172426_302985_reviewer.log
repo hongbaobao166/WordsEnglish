@@ -1,0 +1,32 @@
+[17:24:29] [REVIEWER][stderr] [0m
+[17:24:29] [REVIEWER][stderr] > build · gpt-6.1-terra
+[17:24:30] [REVIEWER][stderr] [0m→ [0mRead frontend/package.json
+[17:24:30] [REVIEWER][stderr] [0m→ [0mRead frontend/README.md
+[17:24:30] [REVIEWER][stderr] [0m✱ [0mGlob "frontend/src/**/*" [90m11 matches[0m
+[17:24:35] [REVIEWER][stderr] > build · gpt-6.1-terra
+[17:24:36] [REVIEWER][stderr] [0m→ [0mRead frontend/src/pages.jsx
+[17:24:36] [REVIEWER][stderr] [0m→ [0mRead frontend/src/App.jsx
+[17:24:36] [REVIEWER][stderr] [0m→ [0mRead frontend/src/App.test.jsx
+[17:24:36] [REVIEWER][stderr] [0m→ [0mRead frontend/src/services/fixtures.js
+[17:24:36] [REVIEWER][stderr] [0m→ [0mRead frontend/src/services/api.js
+[17:24:36] [REVIEWER][stderr] [0m→ [0mRead frontend/src/components/Layout.jsx
+[17:24:37] REVIEWER: process still running | 10s
+[17:24:38] [REVIEWER][stderr] > build · gpt-6.1-terra
+[17:24:39] [REVIEWER][stderr] [0m✱ [0mGrep "setEditing" [90min frontend/src/pages.jsx · 4 matches[0m
+[17:24:42] [REVIEWER][stderr] > build · gpt-6.1-terra
+[17:24:46] REVIEWER: process still running | 20s
+[17:24:47] [REVIEWER][stdout] ## Review findings
+[17:24:47] [REVIEWER][stdout] 
+[17:24:47] [REVIEWER][stdout] **FAIL — Editing an existing word does not retain its CEFR level in fixture mode.** Fixture words store `level` as a code such as `A2` (`frontend/src/services/fixtures.js:3–8`), but the editor’s level options use numeric IDs and the save handler converts the selected value to a number (`frontend/src/pages.jsx:49–51`). The existing level therefore does not match an option when editing.
+[17:24:47] [REVIEWER][stdout] 
+[17:24:47] [REVIEWER][stdout] **Changes needed:** Normalize the word’s level code to its corresponding level ID when opening the editor, and add a test that edits an existing fixture word without changing its level.
+[17:24:47] [REVIEWER][stdout] 
+[17:24:47] [REVIEWER][stdout] ## Evidence and limits
+[17:24:47] [REVIEWER][stdout] 
+[17:24:47] [REVIEWER][stdout] - Inspected the frontend source and five test cases. The tests mock the API and do not cover vocabulary editing.
+[17:24:47] [REVIEWER][stdout] - The supplied test report records **5 tests passed** and a successful production build. Those results were not independently rerun in this review.
+[17:24:47] [REVIEWER][stdout] - **MANUAL CHECK:** Browser appearance and responsive behavior were not verified.
+[17:24:47] [REVIEWER][stdout] - No files were modified and no terminal commands were run. Backend, database and real API integration were not checked, as required for this phase.
+[17:24:47] [REVIEWER][stdout] 
+[17:24:47] [REVIEWER][stdout] STATUS: FAIL
+[17:24:48] REVIEWER: exit=0, duration=21s

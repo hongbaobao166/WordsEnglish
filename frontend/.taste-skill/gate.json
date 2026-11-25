@@ -1,0 +1,489 @@
+{
+ "start": "2026-11-24T13:00:18.712Z",
+ "round": 3,
+ "idle": 0,
+ "errors": 3,
+ "status": "open",
+ "history": [
+  {
+   "at": "2026-11-24T13:02:30.960Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 23,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-24T13:04:02.004Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 12,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-24T13:05:42.677Z",
+   "mode": "manual",
+   "status": "open",
+   "fails": 11,
+   "round": 3,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": null,
+  "url": "http://localhost:8080/",
+  "root": null,
+  "kind": "software",
+  "category": "ứng dụng học tiếng Anh",
+  "primary": "đăng nhập",
+  "rounds": 3,
+  "start": "2026-11-24T13:00:18.712Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "9a65056363b870c7:da39a3ee",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "9a65056363b870c7",
+ "page": "http://localhost:8080/",
+ "found": {
+  "fails": [
+   {
+    "check": "no-visual",
+    "where": "div.auth-page \"Dành chỗ cho những từ mới.\"",
+    "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "no-visual"
+    ],
+    "wheres": [
+     "div.auth-page \"Dành chỗ cho những từ mới.\""
+    ]
+   },
+   {
+    "check": "copy-headline",
+    "where": "div.auth-page > div.auth-intro > div > h1 \"Dành chỗ cho những từ mới.\"",
+    "msg": "\"Dành chỗ cho những từ mới.\" does not name what is sold (ung dung hoc tieng anh, ung, dung, hoc, from flags); only the line under it does",
+    "fix": "put the category noun in the h1 (and who it is for, or where), in 2 to 8 words",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "copy-headline"
+    ],
+    "wheres": [
+     "div.auth-page > div.auth-intro > div > h1 \"Dành chỗ cho những từ mới.\""
+    ]
+   },
+   {
+    "check": "copy-fact",
+    "where": "div.auth-page > div.auth-intro > div > h1 \"Dành chỗ cho những từ mới.\"",
+    "msg": "the first screen holds no number, price, date, place, platform or genre",
+    "fix": "put one hard fact from the brief on the first screen: a number, a price, a date, the place, the platforms it runs on or a game's genre; take it from the brief or remove the claim",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "copy-fact"
+    ],
+    "wheres": [
+     "div.auth-page > div.auth-intro > div > h1 \"Dành chỗ cho những từ mới.\""
+    ]
+   },
+   {
+    "check": "moment-none",
+    "where": "(the page)",
+    "msg": "a software page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+    "fix": "deal one (moments.mjs pick --page software) and mount it in its own section",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "moment-none"
+    ],
+    "wheres": [
+     "(the page)"
+    ]
+   },
+   {
+    "check": "hero-screen",
+    "where": "div.auth-page > div.auth-form-wrap \"KHÔNG GIAN HỌC TẬPChào mừng trở lạiTiếp \"",
+    "msg": "900px of the next section shows on the first screen (from 0px on a 900px screen): nothing below the hero shows at load (SR-1)",
+    "fix": "end the hero at the fold so nothing of the next section shows at load (hero height: 100svh)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "hero-screen"
+    ],
+    "wheres": [
+     "div.auth-page > div.auth-form-wrap \"KHÔNG GIAN HỌC TẬPChào mừng trở lạiTiếp \""
+    ]
+   },
+   {
+    "check": "one-section",
+    "where": "div.auth-page > div.auth-form-wrap > form.auth-form > h2 \"Chào mừng trở lại\"",
+    "msg": "the screen at scroll 0px (stride 0) shows 900px of section 2 and the heading of section 2 whole and the content of 2 sections, over 24px each beside section 1: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-section"
+    ],
+    "wheres": [
+     "div.auth-page > div.auth-form-wrap > form.auth-form > h2 \"Chào mừng trở lại\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "div.auth-page \"wordwiseTIẾNG ANH MỖI NGÀYMỖI NGÀY MỘT C\"",
+    "msg": "a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "div.auth-page \"wordwiseTIẾNG ANH MỖI NGÀYMỖI NGÀY MỘT C\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "div.auth-page > div.auth-intro \"wordwiseTIẾNG ANH MỖI NGÀYMỖI NGÀY MỘT C\"",
+    "msg": "the section needs exactly one in-flow child .wrap (it has 3 in-flow children, 0 .wrap) (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "div.auth-page > div.auth-intro \"wordwiseTIẾNG ANH MỖI NGÀYMỖI NGÀY MỘT C\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "div.auth-page > div.auth-form-wrap \"KHÔNG GIAN HỌC TẬPChào mừng trở lạiTiếp \"",
+    "msg": "the section needs exactly one in-flow child .wrap (it has 1 in-flow child, 0 .wrap) (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "div.auth-page > div.auth-form-wrap \"KHÔNG GIAN HỌC TẬPChào mừng trở lạiTiếp \""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "div.auth-page > div.auth-form-wrap > form.auth-form > div.auth-switch \"Bạn mới đến Wordwise? Tạo tài khoản\"",
+    "msg": "1 text block starts on a left line at x 972, 972px from the container's left: text starts on the container's left, or on one split line (x 610, 732, 854) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "div.auth-page > div.auth-form-wrap > form.auth-form > div.auth-switch \"Bạn mới đến Wordwise? Tạo tài khoản\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "div.auth-page > div.auth-form-wrap > form.auth-form > h2 \"Chào mừng trở lại\"",
+    "msg": "6 text blocks start on a left line at x 890, 890px from the container's left: text starts on the container's left, or on one split line (x 610, 732, 854) (also \"Tiếp tục hành trình học tập của \", \"Tên đăng nhập\", \"Tên đăng nhập\") (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "div.auth-page > div.auth-form-wrap > form.auth-form > h2 \"Chào mừng trở lại\""
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "copy-buttons",
+    "where": "div.auth-page > div.auth-form-wrap > form.auth-form > button.button.full \"Đăng nhập →\"",
+    "msg": "\"Đăng nhập →\" does not start with a verb (book, buy, try, start, get, see...)",
+    "fix": "label buttons with a verb and what the visitor gets (\"Book a room\", \"Start free trial\")",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "orphan",
+    "where": "div.auth-page > div.auth-intro > div > p \"Không gian để học, ôn tập và làm chủ tiế\"",
+    "msg": "its last line holds only \"Anh.\"",
+    "fix": "rebalance the text (text-wrap: pretty, or a shorter line) so the last line holds more than one short word",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "skip-link",
+    "where": "div.auth-page:nth-of-type(2) > div.auth-intro:nth-of-type(1) > a.brand \"wordwiseTIẾNG ANH MỖI NGÀY\"",
+    "msg": "the first Tab stop is \"wordwiseTIẾNG ANH MỖI NGÀY\", not a skip link: a keyboard user tabs through the whole nav on every visit",
+    "fix": "add the starter's skip link as the header's first child: <a class=\"skip-link\" href=\"#top\">Skip to content</a>",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "share-meta",
+    "where": "head",
+    "msg": "the head lacks og:title, og:description, og:image, twitter:card, an icon, theme-color: a shared link shows no picture or title of its own",
+    "fix": "copy the head block of starter.html: og tags, twitter:card, the icon and theme-color (references/system.md, Head)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "form-fields",
+    "where": "div.auth-page:nth-of-type(2) > div.auth-form-wrap:nth-of-type(2) > form.auth-form",
+    "msg": "the form has no status line (role=\"status\"): sending, sent and errors are never read out",
+    "fix": "give each field its type, autocomplete and inputmode, never block paste or disable the button before a submit, and add the status line (references/system.md, Forms)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-air",
+    "where": "div.auth-page > div.auth-form-wrap \"KHÔNG GIAN HỌC TẬPChào mừng trở lạiTiếp \"",
+    "msg": "the content fills 44.8% of the section's height (404 of 900px): 55% or more (40% WARN) (SR-3)",
+    "fix": "fill the section to 55%: more content, a picture or a background layer, or merge it into the section above as its last block",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   }
+  ],
+  "crashed": [
+   "check.mjs could not run (exit 2: no Chrome found (set CHROME_PATH))"
+  ],
+  "seconds": {
+   "consistency": 46,
+   "layout": 0
+  }
+ },
+ "open": [
+  {
+   "check": "no-visual",
+   "where": "div.auth-page \"Dành chỗ cho những từ mới.\"",
+   "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+   "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "no-visual"
+   ],
+   "wheres": [
+    "div.auth-page \"Dành chỗ cho những từ mới.\""
+   ]
+  },
+  {
+   "check": "copy-headline",
+   "where": "div.auth-page > div.auth-intro > div > h1 \"Dành chỗ cho những từ mới.\"",
+   "msg": "\"Dành chỗ cho những từ mới.\" does not name what is sold (ung dung hoc tieng anh, ung, dung, hoc, from flags); only the line under it does",
+   "fix": "put the category noun in the h1 (and who it is for, or where), in 2 to 8 words",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "copy-headline"
+   ],
+   "wheres": [
+    "div.auth-page > div.auth-intro > div > h1 \"Dành chỗ cho những từ mới.\""
+   ]
+  },
+  {
+   "check": "copy-fact",
+   "where": "div.auth-page > div.auth-intro > div > h1 \"Dành chỗ cho những từ mới.\"",
+   "msg": "the first screen holds no number, price, date, place, platform or genre",
+   "fix": "put one hard fact from the brief on the first screen: a number, a price, a date, the place, the platforms it runs on or a game's genre; take it from the brief or remove the claim",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "copy-fact"
+   ],
+   "wheres": [
+    "div.auth-page > div.auth-intro > div > h1 \"Dành chỗ cho những từ mới.\""
+   ]
+  },
+  {
+   "check": "moment-none",
+   "where": "(the page)",
+   "msg": "a software page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+   "fix": "deal one (moments.mjs pick --page software) and mount it in its own section",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "moment-none"
+   ],
+   "wheres": [
+    "(the page)"
+   ]
+  },
+  {
+   "check": "hero-screen",
+   "where": "div.auth-page > div.auth-form-wrap \"KHÔNG GIAN HỌC TẬPChào mừng trở lạiTiếp \"",
+   "msg": "900px of the next section shows on the first screen (from 0px on a 900px screen): nothing below the hero shows at load (SR-1)",
+   "fix": "end the hero at the fold so nothing of the next section shows at load (hero height: 100svh)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "hero-screen"
+   ],
+   "wheres": [
+    "div.auth-page > div.auth-form-wrap \"KHÔNG GIAN HỌC TẬPChào mừng trở lạiTiếp \""
+   ]
+  },
+  {
+   "check": "one-section",
+   "where": "div.auth-page > div.auth-form-wrap > form.auth-form > h2 \"Chào mừng trở lại\"",
+   "msg": "the screen at scroll 0px (stride 0) shows 900px of section 2 and the heading of section 2 whole and the content of 2 sections, over 24px each beside section 1: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+   "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-section"
+   ],
+   "wheres": [
+    "div.auth-page > div.auth-form-wrap > form.auth-form > h2 \"Chào mừng trở lại\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "div.auth-page \"wordwiseTIẾNG ANH MỖI NGÀYMỖI NGÀY MỘT C\"",
+   "msg": "a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "div.auth-page \"wordwiseTIẾNG ANH MỖI NGÀYMỖI NGÀY MỘT C\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "div.auth-page > div.auth-intro \"wordwiseTIẾNG ANH MỖI NGÀYMỖI NGÀY MỘT C\"",
+   "msg": "the section needs exactly one in-flow child .wrap (it has 3 in-flow children, 0 .wrap) (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "div.auth-page > div.auth-intro \"wordwiseTIẾNG ANH MỖI NGÀYMỖI NGÀY MỘT C\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "div.auth-page > div.auth-form-wrap \"KHÔNG GIAN HỌC TẬPChào mừng trở lạiTiếp \"",
+   "msg": "the section needs exactly one in-flow child .wrap (it has 1 in-flow child, 0 .wrap) (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "div.auth-page > div.auth-form-wrap \"KHÔNG GIAN HỌC TẬPChào mừng trở lạiTiếp \""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "div.auth-page > div.auth-form-wrap > form.auth-form > div.auth-switch \"Bạn mới đến Wordwise? Tạo tài khoản\"",
+   "msg": "1 text block starts on a left line at x 972, 972px from the container's left: text starts on the container's left, or on one split line (x 610, 732, 854) (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "div.auth-page > div.auth-form-wrap > form.auth-form > div.auth-switch \"Bạn mới đến Wordwise? Tạo tài khoản\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "div.auth-page > div.auth-form-wrap > form.auth-form > h2 \"Chào mừng trở lại\"",
+   "msg": "6 text blocks start on a left line at x 890, 890px from the container's left: text starts on the container's left, or on one split line (x 610, 732, 854) (also \"Tiếp tục hành trình học tập của \", \"Tên đăng nhập\", \"Tên đăng nhập\") (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "div.auth-page > div.auth-form-wrap > form.auth-form > h2 \"Chào mừng trở lại\""
+   ]
+  }
+ ],
+ "waived": [],
+ "warnCount": 6,
+ "at": "2026-11-24T13:05:42.678Z",
+ "openTold": true
+}

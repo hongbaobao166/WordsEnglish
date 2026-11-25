@@ -1,0 +1,65 @@
+
+[
+    {
+        "id": "01-design",
+        "name": "Architecture and API design",
+        "requirements": "Update docs/architecture.md for MySQL 8.4 and Django REST Framework. Inspect existing backend without reading secret values. Missing frontend is expected. Design API contract and schema. Preserve valid work.",
+        "checks": "Verify architecture document exists and covers requested features. Missing application directories do not block design. Runtime tests are not applicable.",
+        "depends_on": []
+    },
+    {
+        "id": "04-frontend",
+        "name": "Frontend features",
+        "requirements": "Initialize frontend from scratch if missing using React, Vite and Tailwind CSS. Create responsive user and admin screens, login, register, dashboard, vocabulary management, flashcards, quizzes and learning history. Separate reusable components and API services. Work independently of backend and database availability. Use temporary fixtures for UI development and testing only.",
+        "checks": "Run frontend tests and production build. Report unavailable browser visual checks separately. Do not require backend or database to approve this phase.",
+        "depends_on": [
+            "01-design"
+        ]
+    },
+    {
+        "id": "02-database",
+        "name": "Django and MySQL database",
+        "requirements": "Reuse existing Django backend, models and migrations. Replace PostgreSQL configuration with MySQL 8.4. Existing Docker container learnenglish-mysql is running at 127.0.0.1:3306. Database name and username are learnenglish. Load MYSQL_PASSWORD from existing root .env without displaying its value. Preserve compose.yaml, container, volume and existing data. Use compatible mysqlclient and supported Python/Django versions. If Windows native driver is unavailable, use a local Linux backend container on the existing Compose network without bypassing OS security controls.",
+        "checks": "Verify actual MySQL connection. Run Django checks, migration consistency and migrations on the dedicated LearnEnglish development database. Verify seed and persistence. Use a separate approved database for destructive tests. Report missing essential database dependencies as BLOCKED.",
+        "depends_on": [
+            "01-design"
+        ]
+    },
+    {
+        "id": "03-backend",
+        "name": "Backend REST API",
+        "requirements": "Implement JWT authentication, registration, login, authorization, vocabulary CRUD, categories, CEFR levels, search, pagination, spaced repetition, flashcards, learning progress, review history and quizzes. Use Django REST Framework, Service Layer and MySQL. Add validation, error handling and backend tests.",
+        "checks": "Verify backend APIs, authentication, authorization, user isolation, vocabulary CRUD and study logic. Run tests on an isolated approved test database.",
+        "depends_on": [
+            "02-database"
+        ]
+    },
+    {
+        "id": "05-integration",
+        "name": "Frontend and Backend integration",
+        "requirements": "Connect frontend to real backend APIs. Remove runtime mock data. Implement authentication handling, loading states, validation and error handling. Verify data persistence and user isolation.",
+        "checks": "Start local services. Verify login, vocabulary APIs, quiz results, learning progress and database persistence. Verify unauthorized requests are rejected.",
+        "depends_on": [
+            "03-backend",
+            "04-frontend"
+        ]
+    },
+    {
+        "id": "06-testing",
+        "name": "Full system testing",
+        "requirements": "Run frontend, backend and integration tests. Fix confirmed defects. Add missing regression tests. Do not redesign working features unnecessarily.",
+        "checks": "Verify frontend production build, backend tests, MySQL migrations and real API integration. Report optional browser visual checks separately. Essential checks must pass.",
+        "depends_on": [
+            "05-integration"
+        ]
+    },
+    {
+        "id": "07-docs",
+        "name": "Documentation and handoff",
+        "requirements": "Create README.md and .env.example without secrets. Document architecture, database schema, API endpoints, installation and startup commands. Document actual completed features and limitations.",
+        "checks": "Verify documentation matches actual source code and project structure. Verify referenced files and commands exist.",
+        "depends_on": [
+            "06-testing"
+        ]
+    }
+]

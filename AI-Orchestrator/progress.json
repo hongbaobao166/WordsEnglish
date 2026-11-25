@@ -1,0 +1,52 @@
+{
+  "fingerprint": "4a7f28d53a7cc95616025a9952db3c1b6a0c2f825266caf8289e241d9fd86a21",
+  "phases": {
+    "01-design": {
+      "status": "passed",
+      "repairs": 0,
+      "logs": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\01-design\\20261124_171510_437483",
+      "planner_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\01-design\\20261124_171510_437483\\plan.md",
+      "developer_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\01-design\\20261124_171510_437483\\developer_0.md",
+      "tester_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\01-design\\20261124_171510_437483\\tester_0.md",
+      "reviewer_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\01-design\\20261124_171510_437483\\reviewer_0.md"
+    },
+    "04-frontend": {
+      "status": "passed",
+      "repairs": 2,
+      "logs": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\04-frontend\\20261124_171716_291412",
+      "planner_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\04-frontend\\20261124_171716_291412\\plan.md",
+      "feedback": "I’ll run the frontend checks against the current project without changing application source. I’ll also verify whether the development server starts; browser-only visual checks will be reported separately.\n**Frontend phase checks passed.** No application source was modified.\n\nCommands executed in `frontend/`:\n\n- `npm test` — 6 tests passed across 2 files. React Router emitted future-version warnings.\n- `npm run build` — production build passed and generated files under `frontend/dist/`.\n- `npm run dev -- --host 127.0.0.1` — Vite reported ready on port 5173.\n- PowerShell `Invoke-WebRequest` to `http://127.0.0.1:5173/` — returned HTTP 200 with the Vite entry present.\n- `taskkill /PID 33016 /T /F` — stopped the development server process tree started for this check.\n\n**MANUAL CHECK:** Browser appearance and responsive layouts were not visually verified. Backend, database, and real API integration were outside this phase.\n\nSTATUS: PASS\nThe development server’s exit code 1 followed its intentional termination after the successful startup and HTTP check. It does not change the phase result.\n\nSTATUS: PASS\nI’m reviewing the actual screen and fixture-service behavior against the phase requirements; the reported test and build results will be treated as prior-run evidence, not as checks I ran.\n**Finding — quiz history never shows completed quizzes.** In `frontend/src/services/fixtures.js:25–26`, `submitQuiz()` returns a score but does not record it, and `quizzes()` always returns an empty list. Consequently, the quiz-history section in `frontend/src/pages.jsx:39–41` remains empty after completing a quiz in independent fixture mode.\n\n**Changes needed:** Store completed quiz results in the in-memory fixture service, return them from `quizzes()`, and add a test covering completion followed by viewing history. Fixture data may still reset on reload.\n\n**Evidence reviewed:** The source contains React/Vite/Tailwind screens, separate API services, and six test cases, including the CEFR edit regression. The supplied prior-run report records six passing tests, a successful production build, and a development-server HTTP 200. I did not rerun these checks; no terminal commands were executed and no files were modified during this review.\n\n**MANUAL CHECK:** Browser appearance and responsive layouts remain unverified. Backend, database, and real API integration are outside this phase.\n\nSTATUS: FAIL",
+      "developer_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\04-frontend\\20261124_171716_291412\\developer_2.md",
+      "tester_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\04-frontend\\20261124_171716_291412\\tester_2.md",
+      "reviewer_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\04-frontend\\20261124_171716_291412\\reviewer_2.md"
+    },
+    "02-database": {
+      "status": "passed",
+      "repairs": 0,
+      "logs": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\02-database\\20261124_172815_720553",
+      "planner_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\02-database\\20261124_172815_720553\\plan.md",
+      "developer_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\02-database\\20261124_172815_720553\\developer_0.md",
+      "tester_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\02-database\\20261124_172815_720553\\tester_0.md",
+      "reviewer_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\02-database\\20261124_172815_720553\\reviewer_0.md"
+    },
+    "03-backend": {
+      "status": "blocked",
+      "repairs": 0,
+      "logs": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\03-backend\\20261124_173311_826253",
+      "planner_report": "D:\\ProjectPerson\\LearnEnglish\\AI-Orchestrator\\logs\\03-backend\\20261124_173311_826253\\plan.md",
+      "feedback": "I’ll check the backend’s available test setup and run only checks that do not touch the existing application database. Database-backed tests will require an approved isolated test database.\nThe host Python lacks Django, but a local backend image is available. I’ll use it with a read-only source mount and networking disabled for framework checks; it cannot reach the application database.\n**Backend phase checks are blocked.** The available backend image lacks Simple JWT, and no approved isolated MySQL test database was provided. Authentication, authorization, user isolation, CRUD, study logic, migrations, and MySQL persistence remain unverified.\n\n**Commands and results:**\n- `python -c \"import importlib.util; ...\"` — Django, DRF, and Simple JWT were unavailable on the host.\n- `docker image ls learnenglish-backend-local --format \"{{.Repository}}:{{.Tag}}\"` — local image found.\n- `docker ps --format \"{{.Names}}\"` — `learnenglish-mysql` is running.\n- `docker run --rm --network none --mount \"type=bind,source=D:\\ProjectPerson\\LearnEnglish\\backend,target=/app,readonly\" -e PYTHONDONTWRITEBYTECODE=1 learnenglish-backend-local:latest python manage.py check` — failed: `No module named 'rest_framework_simplejwt'`.\n- The same isolated Docker command with `manage.py makemigrations --check --dry-run` — failed on the same missing module.\n- The same isolated Docker command with `manage.py test` — stopped because `MYSQL_TEST_DATABASE` was not set to an approved test database; no tests ran.\n\n**Files modified:** none. Existing containers and volumes were preserved; no database was accessed. To proceed, provide an environment with the declared backend dependencies and approve a dedicated MySQL test database and Django’s test-database lifecycle.\n\nSTATUS: BLOCKED\nThe supplied evidence shows the essential database-backed checks did not run. I’m reviewing the implementation separately for concrete defects that can be established from source.\n## Review outcome\n\n**FAIL — one concrete study-logic defect found.** Essential API and MySQL checks are also blocked and remain unverified.\n\n### Defect\n\n- `backend/vocabulary/views.py:108-110` excludes a learner’s existing progress records when `due_at` is `NULL`. This is a valid state: `backend/vocabulary/models.py:33-34` defaults progress to `status=\"new\"` and permits a null due date. Such a word is neither in `due_ids` nor considered unstarted, so it never appears in flashcards.\n- **Required change:** Include that learner’s progress records with `due_at__isnull=True` in the flashcard queryset. Add a test in `backend/vocabulary/tests.py` creating a default progress record and verifying that its word appears for its owner, without affecting another user’s results.\n\n### Verification evidence\n\nThe supplied test report says the host lacks Django, DRF and Simple JWT; the local backend image lacks Simple JWT. Django checks and migration checks therefore failed to start. Database-backed tests did not run because an isolated test database and its creation/destruction lifecycle were not approved.\n\nThe source contains tests for authentication, catalog authorization, reviews, isolation and quizzes, but their presence is not evidence that they pass. Authentication, CRUD, study logic, migrations and MySQL persistence remain unverified.\n\n**Files modified:** None.  \n**Commands executed during this review:** None. Source was inspected using read-only file tools.\n\nSTATUS: FAIL"
+    },
+    "05-integration": {
+      "status": "pending",
+      "repairs": 0
+    },
+    "06-testing": {
+      "status": "pending",
+      "repairs": 0
+    },
+    "07-docs": {
+      "status": "pending",
+      "repairs": 0
+    }
+  }
+}

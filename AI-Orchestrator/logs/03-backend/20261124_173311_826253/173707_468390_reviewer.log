@@ -1,0 +1,41 @@
+[17:37:10] [REVIEWER][stderr] [0m
+[17:37:10] [REVIEWER][stderr] > build · gpt-6.1-terra
+[17:37:12] [REVIEWER][stderr] [0m→ [0mRead backend/README.md
+[17:37:12] [REVIEWER][stderr] [0m→ [0mRead backend/requirements.txt
+[17:37:12] [REVIEWER][stderr] [0m✱ [0mGlob "backend/**/*.py" [90m18 matches[0m
+[17:37:14] [REVIEWER][stderr] > build · gpt-6.1-terra
+[17:37:17] [REVIEWER][stdout] The supplied evidence shows the essential database-backed checks did not run. I’m reviewing the implementation separately for concrete defects that can be established from source.
+[17:37:17] [REVIEWER][stderr] [0m→ [0mRead backend/vocabulary/views.py
+[17:37:17] [REVIEWER][stderr] [0m→ [0mRead backend/vocabulary/services.py
+[17:37:17] [REVIEWER][stderr] [0m→ [0mRead backend/vocabulary/serializers.py
+[17:37:17] [REVIEWER][stderr] [0m→ [0mRead backend/vocabulary/tests.py
+[17:37:17] [REVIEWER][stderr] [0m→ [0mRead backend/vocabulary/urls.py
+[17:37:17] [REVIEWER][stderr] [0m→ [0mRead backend/vocabulary/models.py
+[17:37:18] REVIEWER: process still running | 10s
+[17:37:20] [REVIEWER][stderr] > build · gpt-6.1-terra
+[17:37:23] [REVIEWER][stderr] [0m→ [0mRead backend/config/urls.py
+[17:37:23] [REVIEWER][stderr] [0m→ [0mRead backend/vocabulary/migrations/0002_review_quiz_quizquestion.py
+[17:37:23] [REVIEWER][stderr] [0m→ [0mRead backend/vocabulary/migrations/0001_initial.py
+[17:37:23] [REVIEWER][stderr] [0m✱ [0mGrep "PAGE_SIZE|DEFAULT_PERMISSION_CLASSES|JWTAuthentication|BLACKLIST|ROTATE_REFRESH|TEST|test|SimpleJWT" [90min backend/config/settings.py · 11 matches[0m
+[17:37:27] [REVIEWER][stderr] > build · gpt-6.1-terra
+[17:37:28] REVIEWER: process still running | 20s
+[17:37:32] [REVIEWER][stdout] ## Review outcome
+[17:37:32] [REVIEWER][stdout] 
+[17:37:32] [REVIEWER][stdout] **FAIL — one concrete study-logic defect found.** Essential API and MySQL checks are also blocked and remain unverified.
+[17:37:32] [REVIEWER][stdout] 
+[17:37:32] [REVIEWER][stdout] ### Defect
+[17:37:32] [REVIEWER][stdout] 
+[17:37:32] [REVIEWER][stdout] - `backend/vocabulary/views.py:108-110` excludes a learner’s existing progress records when `due_at` is `NULL`. This is a valid state: `backend/vocabulary/models.py:33-34` defaults progress to `status="new"` and permits a null due date. Such a word is neither in `due_ids` nor considered unstarted, so it never appears in flashcards.
+[17:37:32] [REVIEWER][stdout] - **Required change:** Include that learner’s progress records with `due_at__isnull=True` in the flashcard queryset. Add a test in `backend/vocabulary/tests.py` creating a default progress record and verifying that its word appears for its owner, without affecting another user’s results.
+[17:37:32] [REVIEWER][stdout] 
+[17:37:32] [REVIEWER][stdout] ### Verification evidence
+[17:37:32] [REVIEWER][stdout] 
+[17:37:32] [REVIEWER][stdout] The supplied test report says the host lacks Django, DRF and Simple JWT; the local backend image lacks Simple JWT. Django checks and migration checks therefore failed to start. Database-backed tests did not run because an isolated test database and its creation/destruction lifecycle were not approved.
+[17:37:32] [REVIEWER][stdout] 
+[17:37:32] [REVIEWER][stdout] The source contains tests for authentication, catalog authorization, reviews, isolation and quizzes, but their presence is not evidence that they pass. Authentication, CRUD, study logic, migrations and MySQL persistence remain unverified.
+[17:37:32] [REVIEWER][stdout] 
+[17:37:32] [REVIEWER][stdout] **Files modified:** None.
+[17:37:32] [REVIEWER][stdout] **Commands executed during this review:** None. Source was inspected using read-only file tools.
+[17:37:32] [REVIEWER][stdout] 
+[17:37:32] [REVIEWER][stdout] STATUS: FAIL
+[17:37:34] REVIEWER: exit=0, duration=26s

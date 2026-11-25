@@ -1,0 +1,70 @@
+[17:32:00] [TESTER][stderr] [0m
+[17:32:00] [TESTER][stderr] > build · gpt-6.1-terra
+[17:32:03] [TESTER][stdout] I’ll verify the existing backend and run the phase checks against the configured development database without changing application source or exposing credentials. I’ll avoid destructive tests unless a separate approved test database is available.
+[17:32:03] [TESTER][stderr] [0m✱ [0mGlob "backend/**" [90m25 matches[0m
+[17:32:03] [TESTER][stderr] [0m✱ [0mGlob "AGENTS.md" [90m0 matches[0m
+[17:32:03] [TESTER][stderr] [0m$ [0mdocker ps --format "table {{.Names}}\t{{.Status}}\t{{.Networks}}"
+[17:32:03] [TESTER][stderr] NAMES                STATUS                    NETWORKS
+[17:32:03] [TESTER][stderr] learnenglish-mysql   Up 21 minutes (healthy)   learnenglish_default
+[17:32:03] [TESTER][stderr] [0m$ [0mdocker image ls learnenglish-backend-local --format "{{.Repository}}:{{.Tag}} {{.ID}}"
+[17:32:03] [TESTER][stderr] learnenglish-backend-local:latest 32b3012fd082
+[17:32:07] TESTER: process still running | 10s
+[17:32:08] [TESTER][stderr] > build · gpt-6.1-terra
+[17:32:08] [TESTER][stderr] [0m→ [0mRead backend/config/settings.py
+[17:32:08] [TESTER][stderr] [0m→ [0mRead backend/README.md
+[17:32:08] [TESTER][stderr] [0m→ [0mRead backend/Dockerfile
+[17:32:08] [TESTER][stderr] [0m→ [0mRead backend/vocabulary/models.py
+[17:32:08] [TESTER][stderr] [0m→ [0mRead backend/vocabulary/management/commands/seed_vocabulary.py
+[17:32:08] [TESTER][stderr] [0m→ [0mRead backend/requirements.txt
+[17:32:11] [TESTER][stderr] > build · gpt-6.1-terra
+[17:32:17] TESTER: process still running | 20s
+[17:32:21] [TESTER][stdout] The existing MySQL container is healthy, and the backend image is available. The project explicitly says no separate test database has been approved, so I won’t run Django’s database-creating test runner.
+[17:32:22] [TESTER][stderr] [0m$ [0mdocker run --rm learnenglish-backend-local python -c "import sys, django, MySQLdb; from importlib.metadata import version; print('Python:', sys.version.split()[0]); print('Django:', django.get_version()); print('mysqlclient:', version('mysqlclient'))"
+[17:32:22] [TESTER][stderr] Python: 3.12.16
+[17:32:22] [TESTER][stderr] Django: 5.2.19
+[17:32:22] [TESTER][stderr] mysqlclient: 2.2.8
+[17:32:22] [TESTER][stderr] [0m$ [0mdocker run --rm --network learnenglish_default -e MYSQL_HOST=mysql -e PYTHONDONTWRITEBYTECODE=1 --mount "type=bind,source=$((Get-Location).Path)\backend,target=/app,readonly" --mount "type=bind,source=$((Get-Location).Path)\.env,target=/.env,readonly" learnenglish-backend-local python manage.py shell -c "from django.db import connection; from vocabulary.models import CEFRLevel, Category, Vocabulary; c=connection.cursor(); c.execute('SELECT DATABASE(), VERSION()'); print('Database and version:', c.fetchone()); print('Seed counts:', CEFRLevel.objects.filter(code__in=['A1','A2','B1','B2','C1','C2']).count(), Category.objects.filter(slug='learnenglish-seed-everyday').count(), Vocabulary.objects.filter(category__slug='learnenglish-seed-everyday', word__in=['book','hello']).count())"
+[17:32:22] [TESTER][stderr] 10 objects imported automatically (use -v 2 for details).
+[17:32:22] [TESTER][stderr] 
+[17:32:22] [TESTER][stderr] Database and version: ('learnenglish', '8.4.13')
+[17:32:22] [TESTER][stderr] Seed counts: 6 1 2
+[17:32:22] [TESTER][stderr] [0m$ [0mdocker run --rm --network learnenglish_default -e MYSQL_HOST=mysql -e PYTHONDONTWRITEBYTECODE=1 --mount "type=bind,source=$((Get-Location).Path)\backend,target=/app,readonly" --mount "type=bind,source=$((Get-Location).Path)\.env,target=/.env,readonly" learnenglish-backend-local python manage.py check
+[17:32:22] [TESTER][stderr] System check identified no issues (0 silenced).
+[17:32:22] [TESTER][stderr] [0m$ [0mdocker run --rm --network learnenglish_default -e MYSQL_HOST=mysql -e PYTHONDONTWRITEBYTECODE=1 --mount "type=bind,source=$((Get-Location).Path)\backend,target=/app,readonly" --mount "type=bind,source=$((Get-Location).Path)\.env,target=/.env,readonly" learnenglish-backend-local python manage.py makemigrations --check --dry-run
+[17:32:22] [TESTER][stderr] No changes detected
+[17:32:27] TESTER: process still running | 30s
+[17:32:28] [TESTER][stderr] > build · gpt-6.1-terra
+[17:32:30] [TESTER][stderr] [0m$ [0mdocker run --rm --network learnenglish_default -e MYSQL_HOST=mysql -e PYTHONDONTWRITEBYTECODE=1 --mount "type=bind,source=$((Get-Location).Path)\backend,target=/app,readonly" --mount "type=bind,source=$((Get-Location).Path)\.env,target=/.env,readonly" learnenglish-backend-local python manage.py migrate --noinput
+[17:32:30] [TESTER][stderr] Operations to perform:
+[17:32:30] [TESTER][stderr]   Apply all migrations: admin, auth, contenttypes, sessions, vocabulary
+[17:32:30] [TESTER][stderr] Running migrations:
+[17:32:30] [TESTER][stderr]   No migrations to apply.
+[17:32:32] [TESTER][stderr] > build · gpt-6.1-terra
+[17:32:35] [TESTER][stderr] [0m$ [0mdocker run --rm --network learnenglish_default -e MYSQL_HOST=mysql -e PYTHONDONTWRITEBYTECODE=1 --mount "type=bind,source=$((Get-Location).Path)\backend,target=/app,readonly" --mount "type=bind,source=$((Get-Location).Path)\.env,target=/.env,readonly" learnenglish-backend-local python manage.py seed_vocabulary
+[17:32:35] [TESTER][stderr] Sample vocabulary seed complete.
+[17:32:36] TESTER: process still running | 40s
+[17:32:39] [TESTER][stderr] > build · gpt-6.1-terra
+[17:32:43] [TESTER][stderr] [0m$ [0mdocker run --rm --network learnenglish_default -e MYSQL_HOST=mysql -e PYTHONDONTWRITEBYTECODE=1 --mount "type=bind,source=$((Get-Location).Path)\backend,target=/app,readonly" --mount "type=bind,source=$((Get-Location).Path)\.env,target=/.env,readonly" learnenglish-backend-local python manage.py shell -c "from vocabulary.models import CEFRLevel, Category, Vocabulary; print('Persisted seed counts:', CEFRLevel.objects.filter(code__in=['A1','A2','B1','B2','C1','C2']).count(), Category.objects.filter(slug='learnenglish-seed-everyday').count(), Vocabulary.objects.filter(category__slug='learnenglish-seed-everyday', word__in=['book','hello']).count())"
+[17:32:43] [TESTER][stderr] 10 objects imported automatically (use -v 2 for details).
+[17:32:43] [TESTER][stderr] 
+[17:32:43] [TESTER][stderr] Persisted seed counts: 6 1 2
+[17:32:47] TESTER: process still running | 50s
+[17:32:48] [TESTER][stderr] > build · gpt-6.1-terra
+[17:32:52] [TESTER][stdout] **All required checks for this MySQL configuration phase passed.** Django connected to the existing `learnenglish` database on MySQL 8.4.13. No application source files were modified.
+[17:32:52] [TESTER][stdout] 
+[17:32:52] [TESTER][stdout] | Check | Actual result |
+[17:32:52] [TESTER][stdout] |---|---|
+[17:32:52] [TESTER][stdout] | Dependency versions | Python 3.12.16, Django 5.2.19, mysqlclient 2.2.8 |
+[17:32:52] [TESTER][stdout] | `manage.py check` | No issues |
+[17:32:52] [TESTER][stdout] | `makemigrations --check --dry-run` | No changes detected |
+[17:32:52] [TESTER][stdout] | `migrate --noinput` | No migrations to apply |
+[17:32:52] [TESTER][stdout] | `seed_vocabulary` | Completed; a separate connection found 6 levels, 1 sample category and 2 sample words |
+[17:32:52] [TESTER][stdout] 
+[17:32:52] [TESTER][stdout] The seed counts were the same before and after the seed command. This verifies persistence of the existing sample records; it does not verify learning-progress persistence.
+[17:32:52] [TESTER][stdout] 
+[17:32:52] [TESTER][stdout] **Commands executed:** `docker ps`, `docker image ls`, and temporary `docker run --rm` containers running the version check, the Django commands above, and Django shell queries for the database identity, version and seed counts. Backend source and `.env` were mounted read-only; secret values were not displayed.
+[17:32:52] [TESTER][stdout] 
+[17:32:52] [TESTER][stdout] Destructive automated tests were not run: no separate test database has been approved. The existing Compose configuration, MySQL container and volume were preserved.
+[17:32:52] [TESTER][stdout] 
+[17:32:52] [TESTER][stdout] STATUS: PASS
+[17:32:53] TESTER: exit=0, duration=57s

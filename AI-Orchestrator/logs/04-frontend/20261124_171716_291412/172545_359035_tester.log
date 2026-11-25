@@ -1,0 +1,89 @@
+[17:25:48] [TESTER][stderr] [0m
+[17:25:48] [TESTER][stderr] > build · gpt-6.1-terra
+[17:25:50] [TESTER][stdout] I’ll run the frontend checks against the current project without changing application source. I’ll also verify whether the development server starts; browser-only visual checks will be reported separately.
+[17:25:50] [TESTER][stderr] [0m✱ [0mGlob "frontend/package.json" [90m1 match[0m
+[17:25:50] [TESTER][stderr] [0m✱ [0mGlob "frontend/src/**/*" [90m12 matches[0m
+[17:25:50] [TESTER][stderr] [0m✱ [0mGlob "frontend/*lock*" [90m1 match[0m
+[17:25:52] [TESTER][stderr] > build · gpt-6.1-terra
+[17:25:52] [TESTER][stderr] [0m→ [0mRead frontend/package.json
+[17:25:55] TESTER: process still running | 10s
+[17:25:57] [TESTER][stderr] > build · gpt-6.1-terra
+[17:25:57] [TESTER][stderr] [0m$ [0mnpm run dev -- --host 127.0.0.1
+[17:25:57] [TESTER][stderr] Command moved to the background (shell ID: sh_20d17407f001DJURiLrmMDExRv).
+[17:25:57] [TESTER][stderr] PID: 33016
+[17:25:57] [TESTER][stderr] Output is streaming to: C:\Users\USER\.local\share\opencode\shell\86c20ff01504f3b3bb0d4df10ddabe50e32915dc\sh_20d17407f001DJURiLrmMDExRv.out
+[17:26:00] [TESTER][stderr] [0m$ [0mnpm run build
+[17:26:00] [TESTER][stderr] > learnenglish-frontend@0.1.0 build
+[17:26:00] [TESTER][stderr] > vite build
+[17:26:00] [TESTER][stderr] 
+[17:26:00] [TESTER][stderr] [36mvite v6.4.6 [32mbuilding for production...[36m[39m
+[17:26:00] [TESTER][stderr] transforming...
+[17:26:00] [TESTER][stderr] [32m✓[39m 1587 modules transformed.
+[17:26:00] [TESTER][stderr] rendering chunks...
+[17:26:00] [TESTER][stderr] computing gzip size...
+[17:26:00] [TESTER][stderr] [2mdist/[22m[32mindex.html                 [39m[1m[2m  0.46 kB[22m[1m[22m[2m │ gzip:  0.31 kB[22m
+[17:26:00] [TESTER][stderr] [2mdist/[22m[35massets/index-DLulGw2u.css  [39m[1m[2m 18.04 kB[22m[1m[22m[2m │ gzip:  4.97 kB[22m
+[17:26:00] [TESTER][stderr] [2mdist/[22m[36massets/index-yovv6pvB.js   [39m[1m[2m203.66 kB[22m[1m[22m[2m │ gzip: 64.46 kB[22m
+[17:26:00] [TESTER][stderr] [32m✓ built in 2.54s[39m
+[17:26:04] [TESTER][stderr] [0m$ [0mnpm test
+[17:26:04] [TESTER][stderr] > learnenglish-frontend@0.1.0 test
+[17:26:04] [TESTER][stderr] > vitest run
+[17:26:04] [TESTER][stderr] 
+[17:26:04] [TESTER][stderr] 
+[17:26:04] [TESTER][stderr] [1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mD:/ProjectPerson/LearnEnglish/frontend[39m
+[17:26:04] [TESTER][stderr] 
+[17:26:04] [TESTER][stderr] [90mstderr[2m | src/App.test.jsx[2m > [22m[2mfrontend flows[2m > [22m[2mvalidates registration passwords
+[17:26:04] [TESTER][stderr] [22m[39m⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+[17:26:04] [TESTER][stderr] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+[17:26:04] [TESTER][stderr] 
+[17:26:04] [TESTER][stderr] [90mstderr[2m | src/AdminWords.test.jsx[2m > [22m[2mfixture vocabulary editor[2m > [22m[2mretains an existing word’s level when saving other changes
+[17:26:04] [TESTER][stderr] [22m[39m⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+[17:26:04] [TESTER][stderr] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+[17:26:04] [TESTER][stderr] 
+[17:26:04] [TESTER][stderr]  [32m✓[39m src/AdminWords.test.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 689[2mms[22m[39m
+[17:26:04] [TESTER][stderr]    [33m[2m✓[22m[39m fixture vocabulary editor[2m > [22mretains an existing word’s level when saving other changes [33m688[2mms[22m[39m
+[17:26:04] [TESTER][stderr]  [32m✓[39m src/App.test.jsx [2m([22m[2m5 tests[22m[2m)[22m[33m 3903[2mms[22m[39m
+[17:26:04] [TESTER][stderr]    [33m[2m✓[22m[39m frontend flows[2m > [22mvalidates registration passwords [33m989[2mms[22m[39m
+[17:26:04] [TESTER][stderr]    [33m[2m✓[22m[39m frontend flows[2m > [22msigns in, searches vocabulary and reviews a flashcard [33m990[2mms[22m[39m
+[17:26:04] [TESTER][stderr]    [33m[2m✓[22m[39m frontend flows[2m > [22mshows API errors instead of silently using fixtures [33m450[2mms[22m[39m
+[17:26:04] [TESTER][stderr]    [33m[2m✓[22m[39m frontend flows[2m > [22mshows staff navigation and admin dashboard [33m560[2mms[22m[39m
+[17:26:04] [TESTER][stderr]    [33m[2m✓[22m[39m frontend flows[2m > [22mrequires answers before submitting a quiz [33m914[2mms[22m[39m
+[17:26:04] [TESTER][stderr] 
+[17:26:04] [TESTER][stderr] [2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[17:26:04] [TESTER][stderr] [2m      Tests [22m [1m[32m6 passed[39m[22m[90m (6)[39m
+[17:26:04] [TESTER][stderr] [2m   Start at [22m 17:25:58
+[17:26:04] [TESTER][stderr] [2m   Duration [22m 5.27s[2m (transform 176ms, setup 131ms, collect 662ms, tests 4.59s, environment 888ms, prepare 216ms)[22m
+[17:26:06] TESTER: process still running | 20s
+[17:26:07] [TESTER][stderr] > build · gpt-6.1-terra
+[17:26:09] [TESTER][stderr] [0m$ [0mtry { $r = Invoke-WebRequest -Uri 'http://127.0.0.1:5173/' -UseBasicParsing -TimeoutSec 5; "HTTP $($r.StatusCode); Vite entry present: $($r.Content.Contains('/src/main.jsx'))" } catch { "Request failed: $($_.Exception.Message)"; exit 1 }
+[17:26:09] [TESTER][stderr] HTTP 200; Vite entry present: True
+[17:26:11] [TESTER][stderr] > build · gpt-6.1-terra
+[17:26:13] [TESTER][stderr] [0m→ [0mRead C:/Users/USER/.local/share/opencode/shell/86c20ff01504f3b3bb0d4df10ddabe50e32915dc/sh_20d17407f001DJURiLrmMDExRv.out
+[17:26:15] [TESTER][stderr] > build · gpt-6.1-terra
+[17:26:15] TESTER: process still running | 30s
+[17:26:16] [TESTER][stderr] [0m$ [0mtaskkill /PID 33016 /T /F
+[17:26:16] [TESTER][stderr] SUCCESS: The process with PID 33540 (child process of PID 36940) has been terminated.
+[17:26:16] [TESTER][stderr] SUCCESS: The process with PID 36940 (child process of PID 36908) has been terminated.
+[17:26:16] [TESTER][stderr] SUCCESS: The process with PID 36908 (child process of PID 37664) has been terminated.
+[17:26:16] [TESTER][stderr] SUCCESS: The process with PID 38312 (child process of PID 33016) has been terminated.
+[17:26:16] [TESTER][stderr] SUCCESS: The process with PID 37664 (child process of PID 33016) has been terminated.
+[17:26:16] [TESTER][stderr] SUCCESS: The process with PID 33016 (child process of PID 32156) has been terminated.
+[17:26:19] [TESTER][stderr] > build · gpt-6.1-terra
+[17:26:22] [TESTER][stdout] **Frontend phase checks passed.** No application source was modified.
+[17:26:22] [TESTER][stdout] 
+[17:26:22] [TESTER][stdout] Commands executed in `frontend/`:
+[17:26:22] [TESTER][stdout] 
+[17:26:22] [TESTER][stdout] - `npm test` — 6 tests passed across 2 files. React Router emitted future-version warnings.
+[17:26:22] [TESTER][stdout] - `npm run build` — production build passed and generated files under `frontend/dist/`.
+[17:26:22] [TESTER][stdout] - `npm run dev -- --host 127.0.0.1` — Vite reported ready on port 5173.
+[17:26:22] [TESTER][stdout] - PowerShell `Invoke-WebRequest` to `http://127.0.0.1:5173/` — returned HTTP 200 with the Vite entry present.
+[17:26:22] [TESTER][stdout] - `taskkill /PID 33016 /T /F` — stopped the development server process tree started for this check.
+[17:26:22] [TESTER][stdout] 
+[17:26:22] [TESTER][stdout] **MANUAL CHECK:** Browser appearance and responsive layouts were not visually verified. Backend, database, and real API integration were outside this phase.
+[17:26:22] [TESTER][stdout] 
+[17:26:22] [TESTER][stdout] STATUS: PASS
+[17:26:24] [TESTER][stderr] > build · gpt-6.1-terra
+[17:26:25] [TESTER][stdout] The development server’s exit code 1 followed its intentional termination after the successful startup and HTTP check. It does not change the phase result.
+[17:26:25] [TESTER][stdout] 
+[17:26:25] [TESTER][stdout] STATUS: PASS
+[17:26:26] TESTER: exit=0, duration=40s

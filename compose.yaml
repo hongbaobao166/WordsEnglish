@@ -1,0 +1,47 @@
+services:
+  backend:
+    build: ./backend
+    image: learnenglish-backend-local:latest
+    restart: unless-stopped
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Missing user password}
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:-local-development-only-not-for-deployment}
+    depends_on:
+      mysql:
+        condition: service_healthy
+    command: sh -c "python manage.py migrate --noinput && python manage.py runserver 0.0.0.0:8000"
+
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:80"
+    depends_on:
+      - backend
+
+  mysql:
+    image: mysql:8.4
+    container_name: learnenglish-mysql
+    restart: unless-stopped
+
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Missing root password}
+      MYSQL_DATABASE: learnenglish
+      MYSQL_USER: learnenglish
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Missing user password}
+
+    ports:
+      - "127.0.0.1:3306:3306"
+
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  mysql_data:

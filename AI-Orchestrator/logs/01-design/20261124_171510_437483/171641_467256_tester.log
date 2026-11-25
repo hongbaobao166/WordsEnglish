@@ -1,0 +1,48 @@
+[17:16:44] [TESTER][stderr] [0m
+[17:16:44] [TESTER][stderr] > build · gpt-6.1-terra
+[17:16:45] [TESTER][stderr] [0m→ [0mRead .
+[17:16:45] [TESTER][stderr] [0m→ [0mRead docs/architecture.md
+[17:16:45] [TESTER][stderr] [0m✱ [0mGlob "**/AGENTS.md" [90m0 matches[0m
+[17:16:48] [TESTER][stderr] > build · gpt-6.1-terra
+[17:16:49] [TESTER][stdout] The architecture document is present and describes the design as proposed, not implemented. I’ll check its coverage and the application directories without opening environment files or accessing the database.
+[17:16:52] TESTER: process still running | 10s
+[17:16:58] [TESTER][stderr] [0m$ [0m$p = 'docs/architecture.md'
+[17:16:58] [TESTER][stderr] if (-not (Test-Path -LiteralPath $p -PathType Leaf)) { Write-Output 'FAIL: architecture document missing'; exit 1 }
+[17:16:58] [TESTER][stderr] $text = Get-Content -LiteralPath $p -Raw
+[17:16:58] [TESTER][stderr] $checks = [ordered]@{
+[17:16:58] [TESTER][stderr]   'MySQL 8.4 and Django REST Framework' = @('MySQL 8\.4','Django REST Framework','Django ORM')
+[17:16:58] [TESTER][stderr]   'Schema and service layer' = @('## Data model','VocabularyProgress','QuizSession','Review','\*\*Services:\*\*')
+[17:16:58] [TESTER][stderr]   'Authentication and authorization' = @('/auth/register/','/auth/token/','/auth/logout/','JWT','permissions')
+[17:16:58] [TESTER][stderr]   'Vocabulary and administration' = @('/vocabulary/','/categories/','/levels/','search','pagination','/admin/dashboard/','/admin/users/')
+[17:16:58] [TESTER][stderr]   'Learning features' = @('/dashboard/','/flashcards/due/','/quizzes/','/history/reviews/','/history/quizzes/','due_at','meaning_vi','phonetic','audio_url','example_sentence')
+[17:16:58] [TESTER][stderr]   'Frontend and integration' = @('React','Vite','Tailwind','responsive','loading','error','real API')
+[17:16:58] [TESTER][stderr]   'Local database safety and verification plan' = @('learnenglish-mysql','127\.0\.0\.1:3306','mysql:3306','dedicated local test database','migrations','Runtime tests are not applicable')
+[17:16:58] [TESTER][stderr] }
+[17:16:58] [TESTER][stderr] $failed = $false
+[17:16:58] [TESTER][stderr] foreach ($entry in $checks.GetEnumerator()) {
+[17:16:58] [TESTER][stderr]   $missing = @($entry.Value | Where-Object { $text -notmatch $_ })
+[17:16:58] [TESTER][stderr]   if ($missing.Count -eq 0) { Write-Output "PASS: $($entry.Key)" } else { Write-Output "FAIL: $($entry.Key); missing patterns: $($missing -join ', ')"; $failed = $true }
+[17:16:58] [TESTER][stderr] }
+[17:16:58] [TESTER][stderr] foreach ($dir in @('backend','frontend')) { if (Test-Path -LiteralPath $dir -PathType Container) { Write-Output "PRESENT: $dir directory" } else { Write-Output "ABSENT: $dir directory (not a phase blocker)" } }
+[17:16:58] [TESTER][stderr] if ($failed) { exit 1 }
+[17:16:58] [TESTER][stderr] PASS: MySQL 8.4 and Django REST Framework
+[17:16:58] [TESTER][stderr] PASS: Schema and service layer
+[17:16:58] [TESTER][stderr] PASS: Authentication and authorization
+[17:16:58] [TESTER][stderr] PASS: Vocabulary and administration
+[17:16:58] [TESTER][stderr] PASS: Learning features
+[17:16:58] [TESTER][stderr] PASS: Frontend and integration
+[17:16:58] [TESTER][stderr] PASS: Local database safety and verification plan
+[17:16:58] [TESTER][stderr] ABSENT: backend directory (not a phase blocker)
+[17:16:58] [TESTER][stderr] ABSENT: frontend directory (not a phase blocker)
+[17:17:01] [TESTER][stderr] > build · gpt-6.1-terra
+[17:17:02] TESTER: process still running | 20s
+[17:17:04] [TESTER][stdout] **Phase checks passed.** `docs/architecture.md` exists and describes the requested MySQL 8.4 and Django REST Framework architecture, schema, API contract, and feature areas.
+[17:17:04] [TESTER][stdout] 
+[17:17:04] [TESTER][stdout] **Evidence:** A PowerShell coverage check returned PASS for the stack, schema and services, authentication, vocabulary and administration, learning features, frontend integration, and database safety plan. Both `backend/` and `frontend/` directories were absent; their absence is not a blocker for this phase. Runtime tests are not applicable.
+[17:17:04] [TESTER][stdout] 
+[17:17:04] [TESTER][stdout] **Commands executed:** One PowerShell script using `Test-Path` and `Get-Content` to check the document and application directories; exit code 0. No secret values were read.
+[17:17:04] [TESTER][stdout] 
+[17:17:04] [TESTER][stdout] **Files modified:** None during QA.
+[17:17:04] [TESTER][stdout] 
+[17:17:04] [TESTER][stdout] STATUS: PASS
+[17:17:05] TESTER: exit=0, duration=23s

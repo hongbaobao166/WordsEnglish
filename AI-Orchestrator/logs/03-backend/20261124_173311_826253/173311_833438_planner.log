@@ -1,0 +1,60 @@
+[17:33:14] [PLANNER][stderr] [0m
+[17:33:14] [PLANNER][stderr] > build · gpt-6.1-terra
+[17:33:17] [PLANNER][stderr] [0m→ [0mRead .
+[17:33:17] [PLANNER][stderr] [0m✱ [0mGlob "**/manage.py" [90min . · 1 match[0m
+[17:33:17] [PLANNER][stderr] [0m✱ [0mGlob "**/AGENTS.md" [90min . · 0 matches[0m
+[17:33:17] [PLANNER][stderr] [0m✱ [0mGlob "**/requirements*.txt" [90min . · 1 match[0m
+[17:33:19] [PLANNER][stderr] > build · gpt-6.1-terra
+[17:33:22] PLANNER: process still running | 10s
+[17:33:22] [PLANNER][stdout] I’ll inspect the backend structure and existing API/test coverage without reading environment secrets or touching the database. The deliverable will be a phase-specific plan only.
+[17:33:22] [PLANNER][stderr] [0m→ [0mRead backend
+[17:33:22] [PLANNER][stderr] [0m✱ [0mGlob "**/*.py" [90min backend · 12 matches[0m
+[17:33:22] [PLANNER][stderr] [0m→ [0mRead backend/requirements.txt
+[17:33:22] [PLANNER][stderr] [0m→ [0mRead docs
+[17:33:22] [PLANNER][stderr] [0m✱ [0mGlob "**/pytest.ini" [90min backend · 0 matches[0m
+[17:33:26] [PLANNER][stderr] > build · gpt-6.1-terra
+[17:33:30] [PLANNER][stderr] [0m→ [0mRead backend/vocabulary/models.py
+[17:33:30] [PLANNER][stderr] [0m→ [0mRead backend/config/urls.py
+[17:33:30] [PLANNER][stderr] [0m→ [0mRead backend/README.md
+[17:33:30] [PLANNER][stderr] [0m→ [0mRead docs/architecture.md
+[17:33:30] [PLANNER][stderr] [0m→ [0mRead backend/vocabulary/migrations/0001_initial.py
+[17:33:30] [PLANNER][stderr] [0m✱ [0mGrep "INSTALLED_APPS|MIDDLEWARE|REST_FRAMEWORK|DATABASES|ENGINE|HOST|PORT|AUTH_USER_MODEL|dotenv|TIME_ZONE|DEFAULT_AUTO_FIELD|DEBUG" [90min backend/config/settings.py · 13 matches[0m
+[17:33:31] PLANNER: process still running | 20s
+[17:33:33] [PLANNER][stderr] > build · gpt-6.1-terra
+[17:33:42] PLANNER: process still running | 30s
+[17:33:43] [PLANNER][stdout] ## Current state
+[17:33:43] [PLANNER][stdout] 
+[17:33:43] [PLANNER][stdout] The backend is a Django/MySQL foundation, not yet an application API. It has catalog and progress models, an initial migration and a seed command. `backend/config/urls.py` exposes only Django admin; no API, service layer or backend tests were found. The architecture document is a proposal and predates the current backend, so its status section is outdated.
+[17:33:43] [PLANNER][stdout] 
+[17:33:43] [PLANNER][stdout] `backend/README.md` states that **no dedicated test database has been approved**. Its test-database guard alone cannot establish that a database is safe to destroy.
+[17:33:43] [PLANNER][stdout] 
+[17:33:43] [PLANNER][stdout] ## Phase plan
+[17:33:43] [PLANNER][stdout] 
+[17:33:43] [PLANNER][stdout] 1. **Identity and authorization**
+[17:33:43] [PLANNER][stdout]    - Add a maintained DRF JWT dependency, registration and password validation, login, refresh, refresh-token revocation/logout, and current-user endpoints.
+[17:33:43] [PLANNER][stdout]    - Configure authenticated defaults; prevent public registration from granting privileges. Restrict catalog writes to staff and scope learning resources to the authenticated user.
+[17:33:43] [PLANNER][stdout] 
+[17:33:43] [PLANNER][stdout] 2. **Catalog**
+[17:33:43] [PLANNER][stdout]    - Add serializers, permissions, views, routes and a service layer for vocabulary CRUD, categories and CEFR levels.
+[17:33:43] [PLANNER][stdout]    - Implement validated search, combined filters and stable pagination. Preserve referenced records; return a clear conflict for protected deletions.
+[17:33:43] [PLANNER][stdout] 
+[17:33:43] [PLANNER][stdout] 3. **Learning**
+[17:33:43] [PLANNER][stdout]    - Extend progress through additive migrations; add review history and scheduling fields without replacing existing data.
+[17:33:43] [PLANNER][stdout]    - Implement due flashcards, user-scoped progress and history, and a documented deterministic spaced-repetition service. Atomically update progress and append reviews, including concurrent first reviews.
+[17:33:43] [PLANNER][stdout] 
+[17:33:43] [PLANNER][stdout] 4. **Quizzes**
+[17:33:43] [PLANNER][stdout]    - Add quiz session, question and answer models with snapshot-based questions and grading.
+[17:33:43] [PLANNER][stdout]    - Validate options and complete submissions; conceal answers until completion. Make grading atomic and prevent repeated submissions and cross-user access.
+[17:33:43] [PLANNER][stdout] 
+[17:33:43] [PLANNER][stdout] 5. **Verification and documentation**
+[17:33:43] [PLANNER][stdout]    - Add backend tests for authentication and revocation, validation, staff permissions, CRUD, filters and pagination, user isolation, scheduling, review transactions, and quiz grading.
+[17:33:43] [PLANNER][stdout]    - After explicit approval of an isolated local MySQL test database and its lifecycle, run migrations and tests against it, then verify real API and persistence behavior. Document observed results and setup without exposing credentials. Do not use or destroy the existing `learnenglish` database or volumes for tests.
+[17:33:43] [PLANNER][stdout] 
+[17:33:43] [PLANNER][stdout] **Approval needed before database tests:** identify an explicitly approved dedicated test database and confirm whether Django may create and destroy it. Until then, implementation planning and other independent work can continue, but database-backed checks remain blocked.
+[17:33:43] [PLANNER][stdout] 
+[17:33:43] [PLANNER][stdout] ## Evidence
+[17:33:43] [PLANNER][stdout] 
+[17:33:43] [PLANNER][stdout] - **Files modified:** none.
+[17:33:43] [PLANNER][stdout] - **Commands executed:** none; inspection used file-listing, reading and search tools.
+[17:33:43] [PLANNER][stdout] - **Tests executed:** none. API behavior, database connectivity and migrations were not verified.
+[17:33:44] PLANNER: exit=0, duration=32s

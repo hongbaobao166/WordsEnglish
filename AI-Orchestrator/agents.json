@@ -1,0 +1,21 @@
+
+{
+    "workspace": "D:/ProjectPerson/LearnEnglish",
+    "max_repairs": 3,
+    "timeout": 1800,
+    "model": "openai/gpt-6.1-terra",
+    "agents": {
+        "planner": {
+            "role": "Software Architect"
+        },
+        "developer": {
+            "role": "Fullstack Developer"
+        },
+        "tester": {
+            "role": "QA Engineer"
+        },
+        "reviewer": {
+            "role": "Senior Code Reviewer"
+        }
+    }
+}

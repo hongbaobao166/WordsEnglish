@@ -1,0 +1,1699 @@
+[17:17:39] [DEVELOPER][stderr] [0m
+[17:17:39] [DEVELOPER][stderr] > build · gpt-6.1-terra
+[17:17:40] [DEVELOPER][stderr] [0m→ [0mSkill "design-taste-frontend"
+[17:17:42] [DEVELOPER][stderr] > build · gpt-6.1-terra
+[17:17:45] [DEVELOPER][stdout] I’ll keep this phase frontend-only, with an explicit fixture mode for independent use and no database access. I’ll first check the local files and available tooling, then implement and run the requested checks.
+[17:17:45] [DEVELOPER][stderr] [0m→ [0mRead .
+[17:17:45] [DEVELOPER][stderr] [0m→ [0mRead docs/architecture.md
+[17:17:45] [DEVELOPER][stderr] [0m✱ [0mGlob "**/AGENTS.md" [90m0 matches[0m
+[17:17:45] [DEVELOPER][stderr] [0m✱ [0mGlob "**/package.json" [90m0 matches[0m
+[17:17:46] [DEVELOPER][stderr] [0m$ [0mnode --version; npm --version
+[17:17:46] [DEVELOPER][stderr] v24.21.0
+[17:17:46] [DEVELOPER][stderr] 11.19.0
+[17:17:47] DEVELOPER: process still running | 10s
+[17:17:49] [DEVELOPER][stderr] > build · gpt-6.1-terra
+[17:17:57] DEVELOPER: process still running | 20s
+[17:18:07] DEVELOPER: process still running | 30s
+[17:18:17] DEVELOPER: process still running | 40s
+[17:18:17] [DEVELOPER][stderr] [0m% [0mPatch 10 files
+[17:18:19] [DEVELOPER][stderr] > build · gpt-6.1-terra
+[17:18:21] [DEVELOPER][stdout] The project has no existing frontend, so I’m creating one without touching the existing environment or Docker configuration. The documented API is explicitly proposed, so the real service layer will remain an integration starting point rather than a claim of backend compatibility.
+[17:18:27] DEVELOPER: process still running | 50s
+[17:18:37] DEVELOPER: process still running | 60s
+[17:18:47] DEVELOPER: process still running | 70s
+[17:18:57] DEVELOPER: process still running | 80s
+[17:19:01] [DEVELOPER][stderr] [0m% [0mPatch 3 files
+[17:19:04] [DEVELOPER][stderr] > build · gpt-6.1-terra
+[17:19:07] DEVELOPER: process still running | 90s
+[17:19:17] DEVELOPER: process still running | 100s
+[17:19:27] DEVELOPER: process still running | 110s
+[17:19:37] DEVELOPER: process still running | 120s
+[17:19:47] DEVELOPER: process still running | 130s
+[17:19:57] DEVELOPER: process still running | 140s
+[17:20:07] DEVELOPER: process still running | 150s
+[17:20:17] DEVELOPER: process still running | 160s
+[17:20:22] [DEVELOPER][stderr] [0m% [0mPatch 2 files
+[17:20:27] [DEVELOPER][stderr] > build · gpt-6.1-terra
+[17:20:27] DEVELOPER: process still running | 170s
+[17:20:37] DEVELOPER: process still running | 180s
+[17:20:47] DEVELOPER: process still running | 190s
+[17:20:57] DEVELOPER: process still running | 200s
+[17:21:07] DEVELOPER: process still running | 210s
+[17:21:08] [DEVELOPER][stderr] [0m% [0mPatch 1 file
+[17:21:11] [DEVELOPER][stderr] > build · gpt-6.1-terra
+[17:21:17] DEVELOPER: process still running | 220s
+[17:21:27] DEVELOPER: process still running | 230s
+[17:21:37] DEVELOPER: process still running | 240s
+[17:21:47] DEVELOPER: process still running | 250s
+[17:21:57] DEVELOPER: process still running | 260s
+[17:22:07] DEVELOPER: process still running | 270s
+[17:22:17] DEVELOPER: process still running | 280s
+[17:22:27] DEVELOPER: process still running | 290s
+[17:22:28] [DEVELOPER][stderr] [0m% [0mPatch 2 files
+[17:22:31] [DEVELOPER][stderr] > build · gpt-6.1-terra
+[17:22:37] DEVELOPER: process still running | 300s
+[17:22:47] DEVELOPER: process still running | 310s
+[17:22:57] DEVELOPER: process still running | 320s
+[17:22:58] [DEVELOPER][stderr] [0m$ [0mnpm install
+[17:22:58] [DEVELOPER][stderr] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[17:22:58] [DEVELOPER][stderr] 
+[17:22:58] [DEVELOPER][stderr] added 246 packages, and audited 247 packages in 25s
+[17:22:58] [DEVELOPER][stderr] 
+[17:22:58] [DEVELOPER][stderr] 47 packages are looking for funding
+[17:22:58] [DEVELOPER][stderr]   run `npm fund` for details
+[17:22:58] [DEVELOPER][stderr] 
+[17:22:58] [DEVELOPER][stderr] 8 vulnerabilities (5 moderate, 1 high, 2 critical)
+[17:22:58] [DEVELOPER][stderr] 
+[17:22:58] [DEVELOPER][stderr] To address all issues (including breaking changes), run:
+[17:22:58] [DEVELOPER][stderr]   npm audit fix --force
+[17:22:58] [DEVELOPER][stderr] 
+[17:22:58] [DEVELOPER][stderr] Run `npm audit` for details.
+[17:22:58] [DEVELOPER][stderr] npm warn install-scripts 3 packages have install scripts not yet covered by allowScripts:
+[17:22:58] [DEVELOPER][stderr] npm warn install-scripts   esbuild@0.25.12 (postinstall: node install.js)
+[17:22:58] [DEVELOPER][stderr] npm warn install-scripts   esbuild@0.21.5 (postinstall: node install.js)
+[17:22:58] [DEVELOPER][stderr] npm warn install-scripts   esbuild@0.21.5 (postinstall: node install.js)
+[17:22:58] [DEVELOPER][stderr] npm warn install-scripts
+[17:22:58] [DEVELOPER][stderr] npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+[17:23:00] [DEVELOPER][stderr] > build · gpt-6.1-terra
+[17:23:02] [DEVELOPER][stdout] The learner and staff screens are in place, with fixtures explicitly opt-in and labeled as temporary. The install reported dependency vulnerabilities; I’ll report those rather than apply an unreviewed forced upgrade.
+[17:23:07] DEVELOPER: process still running | 330s
+[17:23:17] DEVELOPER: process still running | 340s
+[17:23:27] [DEVELOPER][stderr] [0m% [0mPatch 1 file
+[17:23:27] DEVELOPER: process still running | 350s
+[17:23:31] [DEVELOPER][stderr] > build · gpt-6.1-terra
+[17:23:35] [DEVELOPER][stderr] [0m$ [0mnpm run build
+[17:23:35] [DEVELOPER][stderr] > learnenglish-frontend@0.1.0 build
+[17:23:35] [DEVELOPER][stderr] > vite build
+[17:23:35] [DEVELOPER][stderr] 
+[17:23:35] [DEVELOPER][stderr] [36mvite v6.4.6 [32mbuilding for production...[36m[39m
+[17:23:35] [DEVELOPER][stderr] transforming...
+[17:23:35] [DEVELOPER][stderr] [32m✓[39m 1587 modules transformed.
+[17:23:35] [DEVELOPER][stderr] rendering chunks...
+[17:23:35] [DEVELOPER][stderr] computing gzip size...
+[17:23:35] [DEVELOPER][stderr] [2mdist/[22m[32mindex.html                 [39m[1m[2m  0.46 kB[22m[1m[22m[2m │ gzip:  0.31 kB[22m
+[17:23:35] [DEVELOPER][stderr] [2mdist/[22m[35massets/index-DLulGw2u.css  [39m[1m[2m 18.04 kB[22m[1m[22m[2m │ gzip:  4.97 kB[22m
+[17:23:35] [DEVELOPER][stderr] [2mdist/[22m[36massets/index-yovv6pvB.js   [39m[1m[2m203.66 kB[22m[1m[22m[2m │ gzip: 64.46 kB[22m
+[17:23:35] [DEVELOPER][stderr] [32m✓ built in 2.42s[39m
+[17:23:37] DEVELOPER: process still running | 360s
+[17:23:37] [DEVELOPER][stderr] [0m$ [0mnpm test
+[17:23:37] [DEVELOPER][stderr] [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[31m
+[17:23:37] [DEVELOPER][stderr]               [0mPassword[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[31m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[31m=[32m"current-password"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[31m=[32m""[31m
+[17:23:37] [DEVELOPER][stderr]               [33mtype[31m=[32m"password"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[31m=[32m"password123"[31m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<button[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"button full"[31m
+[17:23:37] [DEVELOPER][stderr]             [33mtype[31m=[32m"submit"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mSign in[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[31m
+[17:23:37] [DEVELOPER][stderr]               [0m→[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</button>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<div[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"auth-switch"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mNew to Wordwise?[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<a[31m
+[17:23:37] [DEVELOPER][stderr]               [33mhref[31m=[32m"/register"[31m
+[17:23:37] [DEVELOPER][stderr]             [36m>[31m
+[17:23:37] [DEVELOPER][stderr]               [0mCreate an account[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</a>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m</form>[31m
+[17:23:37] [DEVELOPER][stderr]       [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]     [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]   [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr] [36m</body>[31m[39m
+[17:23:37] [DEVELOPER][stderr] [31m   [31m×[31m frontend flows[2m > [22mshows staff navigation and admin dashboard[33m 503[2mms[22m[31m[39m
+[17:23:37] [DEVELOPER][stderr] [31m     → Unable to find an accessible element with the role "button" and name "Sign in"
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Here are the accessible roles:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   link:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "wordwise ENGLISH, EVERY DAY":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[31m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[31m=[32m"brand"[31m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[31m=[32m"/"[31m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Create an account":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[31m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[31m=[32m"/register"[31m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   heading:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Make room for new words.":
+[17:23:37] [DEVELOPER][stderr]   [36m<h1 />[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Welcome back":
+[17:23:37] [DEVELOPER][stderr]   [36m<h2 />[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   emphasis:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<em />[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   paragraph:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   textbox:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Username":
+[17:23:37] [DEVELOPER][stderr]   [36m<input[31m
+[17:23:37] [DEVELOPER][stderr]     [33mautocomplete[31m=[32m"username"[31m
+[17:23:37] [DEVELOPER][stderr]     [33mrequired[31m=[32m""[31m
+[17:23:37] [DEVELOPER][stderr]     [33mvalue[31m=[32m"learner"[31m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   button:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Sign in →":
+[17:23:37] [DEVELOPER][stderr]   [36m<button[31m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[31m=[32m"button full"[31m
+[17:23:37] [DEVELOPER][stderr]     [33mtype[31m=[32m"submit"[31m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Ignored nodes: comments, script, style
+[17:23:37] [DEVELOPER][stderr] [36m<body>[31m
+[17:23:37] [DEVELOPER][stderr]   [36m<div>[31m
+[17:23:37] [DEVELOPER][stderr]     [36m<div[31m
+[17:23:37] [DEVELOPER][stderr]       [33mclass[31m=[32m"auth-page"[31m
+[17:23:37] [DEVELOPER][stderr]     [36m>[31m
+[17:23:37] [DEVELOPER][stderr]       [36m<div[31m
+[17:23:37] [DEVELOPER][stderr]         [33mclass[31m=[32m"auth-intro"[31m
+[17:23:37] [DEVELOPER][stderr]       [36m>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m<a[31m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[31m=[32m"brand"[31m
+[17:23:37] [DEVELOPER][stderr]           [33mhref[31m=[32m"/"[31m
+[17:23:37] [DEVELOPER][stderr]         [36m>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"brand-mark"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<svg[31m
+[17:23:37] [DEVELOPER][stderr]               [33mclass[31m=[32m"lucide lucide-book-open"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mfill[31m=[32m"none"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mheight[31m=[32m"20"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke[31m=[32m"currentColor"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-linecap[31m=[32m"round"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-linejoin[31m=[32m"round"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-width[31m=[32m"2"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mviewBox[31m=[32m"0 0 24 24"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mwidth[31m=[32m"20"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mxmlns[31m=[32m"http://www.w3.org/2000/svg"[31m
+[17:23:37] [DEVELOPER][stderr]             [36m>[31m
+[17:23:37] [DEVELOPER][stderr]               [36m<path[31m
+[17:23:37] [DEVELOPER][stderr]                 [33md[31m=[32m"M12 7v14"[31m
+[17:23:37] [DEVELOPER][stderr]               [36m/>[31m
+[17:23:37] [DEVELOPER][stderr]               [36m<path[31m
+[17:23:37] [DEVELOPER][stderr]                 [33md[31m=[32m"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"[31m
+[17:23:37] [DEVELOPER][stderr]               [36m/>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m</svg>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<span>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mwordwise[0m
+[17:23:37] [DEVELOPER][stderr]             [36m<small>[31m
+[17:23:37] [DEVELOPER][stderr]               [0mENGLISH, EVERY DAY[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</small>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m</a>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m<div>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"eyebrow"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mA LITTLE PRACTICE GOES A LONG WAY[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<h1>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mMake room for[0m
+[17:23:37] [DEVELOPER][stderr]             [36m<br />[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<em>[31m
+[17:23:37] [DEVELOPER][stderr]               [0mnew words.[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</em>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</h1>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<p>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mA thoughtful place to learn, review, and make English your own.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</p>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m<span[31m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[31m=[32m"auth-footer"[31m
+[17:23:37] [DEVELOPER][stderr]         [36m>[31m
+[17:23:37] [DEVELOPER][stderr]           [0mA little more confident, every day.[0m
+[17:23:37] [DEVELOPER][stderr]         [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]       [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]       [36m<div[31m
+[17:23:37] [DEVELOPER][stderr]         [33mclass[31m=[32m"auth-form-wrap"[31m
+[17:23:37] [DEVELOPER][stderr]       [36m>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m<form[31m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[31m=[32m"auth-form"[31m
+[17:23:37] [DEVELOPER][stderr]         [36m>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"eyebrow"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mYOUR LEARNING SPACE[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<h2>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mWelcome back[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</h2>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<p>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mPick up right where you left off.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</p>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<div[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"notice"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mFixture mode: use “learner” or “admin”; changes are temporary.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"field"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[31m
+[17:23:37] [DEVELOPER][stderr]               [0mUsername[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[31m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[31m=[32m"username"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[31m=[32m""[31m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[31m=[32m"learner"[31m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"field"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[31m
+[17:23:37] [DEVELOPER][stderr]               [0mPassword[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[31m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[31m=[32m"current-password"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[31m=[32m""[31m
+[17:23:37] [DEVELOPER][stderr]               [33mtype[31m=[32m"password"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[31m=[32m"password123"[31m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<button[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"button full"[31m
+[17:23:37] [DEVELOPER][stderr]             [33mtype[31m=[32m"submit"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mSign in[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[31m
+[17:23:37] [DEVELOPER][stderr]               [0m→[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</button>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<div[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"auth-switch"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mNew to Wordwise?[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<a[31m
+[17:23:37] [DEVELOPER][stderr]               [33mhref[31m=[32m"/register"[31m
+[17:23:37] [DEVELOPER][stderr]             [36m>[31m
+[17:23:37] [DEVELOPER][stderr]               [0mCreate an account[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</a>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m</form>[31m
+[17:23:37] [DEVELOPER][stderr]       [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]     [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]   [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr] [36m</body>[31m[39m
+[17:23:37] [DEVELOPER][stderr] [31m   [31m×[31m frontend flows[2m > [22mrequires answers before submitting a quiz[33m 410[2mms[22m[31m[39m
+[17:23:37] [DEVELOPER][stderr] [31m     → Unable to find an accessible element with the role "button" and name "Sign in"
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Here are the accessible roles:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   link:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "wordwise ENGLISH, EVERY DAY":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[31m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[31m=[32m"brand"[31m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[31m=[32m"/"[31m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Create an account":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[31m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[31m=[32m"/register"[31m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   heading:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Make room for new words.":
+[17:23:37] [DEVELOPER][stderr]   [36m<h1 />[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Welcome back":
+[17:23:37] [DEVELOPER][stderr]   [36m<h2 />[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   emphasis:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<em />[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   paragraph:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   textbox:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Username":
+[17:23:37] [DEVELOPER][stderr]   [36m<input[31m
+[17:23:37] [DEVELOPER][stderr]     [33mautocomplete[31m=[32m"username"[31m
+[17:23:37] [DEVELOPER][stderr]     [33mrequired[31m=[32m""[31m
+[17:23:37] [DEVELOPER][stderr]     [33mvalue[31m=[32m"learner"[31m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   button:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Sign in →":
+[17:23:37] [DEVELOPER][stderr]   [36m<button[31m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[31m=[32m"button full"[31m
+[17:23:37] [DEVELOPER][stderr]     [33mtype[31m=[32m"submit"[31m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[31m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Ignored nodes: comments, script, style
+[17:23:37] [DEVELOPER][stderr] [36m<body>[31m
+[17:23:37] [DEVELOPER][stderr]   [36m<div>[31m
+[17:23:37] [DEVELOPER][stderr]     [36m<div[31m
+[17:23:37] [DEVELOPER][stderr]       [33mclass[31m=[32m"auth-page"[31m
+[17:23:37] [DEVELOPER][stderr]     [36m>[31m
+[17:23:37] [DEVELOPER][stderr]       [36m<div[31m
+[17:23:37] [DEVELOPER][stderr]         [33mclass[31m=[32m"auth-intro"[31m
+[17:23:37] [DEVELOPER][stderr]       [36m>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m<a[31m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[31m=[32m"brand"[31m
+[17:23:37] [DEVELOPER][stderr]           [33mhref[31m=[32m"/"[31m
+[17:23:37] [DEVELOPER][stderr]         [36m>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"brand-mark"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<svg[31m
+[17:23:37] [DEVELOPER][stderr]               [33mclass[31m=[32m"lucide lucide-book-open"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mfill[31m=[32m"none"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mheight[31m=[32m"20"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke[31m=[32m"currentColor"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-linecap[31m=[32m"round"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-linejoin[31m=[32m"round"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-width[31m=[32m"2"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mviewBox[31m=[32m"0 0 24 24"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mwidth[31m=[32m"20"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mxmlns[31m=[32m"http://www.w3.org/2000/svg"[31m
+[17:23:37] [DEVELOPER][stderr]             [36m>[31m
+[17:23:37] [DEVELOPER][stderr]               [36m<path[31m
+[17:23:37] [DEVELOPER][stderr]                 [33md[31m=[32m"M12 7v14"[31m
+[17:23:37] [DEVELOPER][stderr]               [36m/>[31m
+[17:23:37] [DEVELOPER][stderr]               [36m<path[31m
+[17:23:37] [DEVELOPER][stderr]                 [33md[31m=[32m"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"[31m
+[17:23:37] [DEVELOPER][stderr]               [36m/>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m</svg>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<span>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mwordwise[0m
+[17:23:37] [DEVELOPER][stderr]             [36m<small>[31m
+[17:23:37] [DEVELOPER][stderr]               [0mENGLISH, EVERY DAY[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</small>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m</a>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m<div>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"eyebrow"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mA LITTLE PRACTICE GOES A LONG WAY[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<h1>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mMake room for[0m
+[17:23:37] [DEVELOPER][stderr]             [36m<br />[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<em>[31m
+[17:23:37] [DEVELOPER][stderr]               [0mnew words.[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</em>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</h1>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<p>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mA thoughtful place to learn, review, and make English your own.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</p>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m<span[31m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[31m=[32m"auth-footer"[31m
+[17:23:37] [DEVELOPER][stderr]         [36m>[31m
+[17:23:37] [DEVELOPER][stderr]           [0mA little more confident, every day.[0m
+[17:23:37] [DEVELOPER][stderr]         [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]       [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]       [36m<div[31m
+[17:23:37] [DEVELOPER][stderr]         [33mclass[31m=[32m"auth-form-wrap"[31m
+[17:23:37] [DEVELOPER][stderr]       [36m>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m<form[31m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[31m=[32m"auth-form"[31m
+[17:23:37] [DEVELOPER][stderr]         [36m>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"eyebrow"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mYOUR LEARNING SPACE[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<h2>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mWelcome back[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</h2>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<p>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mPick up right where you left off.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</p>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<div[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"notice"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mFixture mode: use “learner” or “admin”; changes are temporary.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"field"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[31m
+[17:23:37] [DEVELOPER][stderr]               [0mUsername[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[31m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[31m=[32m"username"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[31m=[32m""[31m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[31m=[32m"learner"[31m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"field"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[31m
+[17:23:37] [DEVELOPER][stderr]               [0mPassword[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[31m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[31m=[32m"current-password"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[31m=[32m""[31m
+[17:23:37] [DEVELOPER][stderr]               [33mtype[31m=[32m"password"[31m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[31m=[32m"password123"[31m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<button[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"button full"[31m
+[17:23:37] [DEVELOPER][stderr]             [33mtype[31m=[32m"submit"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mSign in[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[31m
+[17:23:37] [DEVELOPER][stderr]               [0m→[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</button>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m<div[31m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[31m=[32m"auth-switch"[31m
+[17:23:37] [DEVELOPER][stderr]           [36m>[31m
+[17:23:37] [DEVELOPER][stderr]             [0mNew to Wordwise?[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<a[31m
+[17:23:37] [DEVELOPER][stderr]               [33mhref[31m=[32m"/register"[31m
+[17:23:37] [DEVELOPER][stderr]             [36m>[31m
+[17:23:37] [DEVELOPER][stderr]               [0mCreate an account[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</a>[31m
+[17:23:37] [DEVELOPER][stderr]           [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]         [36m</form>[31m
+[17:23:37] [DEVELOPER][stderr]       [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]     [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr]   [36m</div>[31m
+[17:23:37] [DEVELOPER][stderr] [36m</body>[31m[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] [31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 5 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] [31m[1m[7m FAIL [27m[22m[39m src/App.test.jsx[2m > [22mfrontend flows[2m > [22mvalidates registration passwords
+[17:23:37] [DEVELOPER][stderr] [31m[1mTestingLibraryElementError[22m[39m: Unable to find an accessible element with the role "button" and name "Create account"
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Here are the accessible roles:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   link:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "wordwise ENGLISH, EVERY DAY":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[39m=[32m"brand"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[39m=[32m"/"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Sign in":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[39m=[32m"/login"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   heading:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Make room for new words.":
+[17:23:37] [DEVELOPER][stderr]   [36m<h1 />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Create your account":
+[17:23:37] [DEVELOPER][stderr]   [36m<h2 />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   emphasis:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<em />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   paragraph:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   textbox:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Username":
+[17:23:37] [DEVELOPER][stderr]   [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]     [33mautocomplete[39m=[32m"username"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]     [33mvalue[39m=[32m"someone"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Email":
+[17:23:37] [DEVELOPER][stderr]   [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]     [33mautocomplete[39m=[32m"email"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]     [33mtype[39m=[32m"email"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mvalue[39m=[32m"a@example.test"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   button:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Create account →":
+[17:23:37] [DEVELOPER][stderr]   [36m<button[39m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[39m=[32m"button full"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mtype[39m=[32m"submit"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Ignored nodes: comments, script, style
+[17:23:37] [DEVELOPER][stderr] [36m<body>[39m
+[17:23:37] [DEVELOPER][stderr]   [36m<div>[39m
+[17:23:37] [DEVELOPER][stderr]     [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]       [33mclass[39m=[32m"auth-page"[39m
+[17:23:37] [DEVELOPER][stderr]     [36m>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]         [33mclass[39m=[32m"auth-intro"[39m
+[17:23:37] [DEVELOPER][stderr]       [36m>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[39m=[32m"brand"[39m
+[17:23:37] [DEVELOPER][stderr]           [33mhref[39m=[32m"/"[39m
+[17:23:37] [DEVELOPER][stderr]         [36m>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"brand-mark"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<svg[39m
+[17:23:37] [DEVELOPER][stderr]               [33mclass[39m=[32m"lucide lucide-book-open"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mfill[39m=[32m"none"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mheight[39m=[32m"20"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke[39m=[32m"currentColor"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-linecap[39m=[32m"round"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-linejoin[39m=[32m"round"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-width[39m=[32m"2"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mviewBox[39m=[32m"0 0 24 24"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mwidth[39m=[32m"20"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m>[39m
+[17:23:37] [DEVELOPER][stderr]               [36m<path[39m
+[17:23:37] [DEVELOPER][stderr]                 [33md[39m=[32m"M12 7v14"[39m
+[17:23:37] [DEVELOPER][stderr]               [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]               [36m<path[39m
+[17:23:37] [DEVELOPER][stderr]                 [33md[39m=[32m"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"[39m
+[17:23:37] [DEVELOPER][stderr]               [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m</svg>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mwordwise[0m
+[17:23:37] [DEVELOPER][stderr]             [36m<small>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mENGLISH, EVERY DAY[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</small>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m</a>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<div>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"eyebrow"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mA LITTLE PRACTICE GOES A LONG WAY[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<h1>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mMake room for[0m
+[17:23:37] [DEVELOPER][stderr]             [36m<br />[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<em>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mnew words.[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</em>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</h1>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<p>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mA thoughtful place to learn, review, and make English your own.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</p>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[39m=[32m"auth-footer"[39m
+[17:23:37] [DEVELOPER][stderr]         [36m>[39m
+[17:23:37] [DEVELOPER][stderr]           [0mA little more confident, every day.[0m
+[17:23:37] [DEVELOPER][stderr]         [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]         [33mclass[39m=[32m"auth-form-wrap"[39m
+[17:23:37] [DEVELOPER][stderr]       [36m>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<form[39m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[39m=[32m"auth-form"[39m
+[17:23:37] [DEVELOPER][stderr]         [36m>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"eyebrow"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mYOUR LEARNING SPACE[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<h2>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mCreate your account[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</h2>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<p>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mStart building a vocabulary that stays with you.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</p>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"notice"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mFixture mode: use “learner” or “admin”; changes are temporary.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"field"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mUsername[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[39m=[32m"username"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[39m=[32m"someone"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"field"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mEmail[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[39m=[32m"email"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]               [33mtype[39m=[32m"email"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[39m=[32m"a@example.test"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"field"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mPassword[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[39m=[32m"new-password"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]               [33mtype[39m=[32m"password"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[39m=[32m"password123"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"field"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mConfirm password[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[39m=[32m"new-password"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]               [33mtype[39m=[32m"password"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[39m=[32m"different"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<button[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"button full"[39m
+[17:23:37] [DEVELOPER][stderr]             [33mtype[39m=[32m"submit"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mCreate account[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0m→[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</button>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"auth-switch"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mAlready have an account?[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]               [33mhref[39m=[32m"/login"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mSign in[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</a>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m</form>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]     [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]   [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr] [36m</body>[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[17:23:37] [DEVELOPER][stderr] [36m [2m❯[22m src/App.test.jsx:[2m37:29[22m[39m
+[17:23:37] [DEVELOPER][stderr]     [90m 35| [39m    [35mawait[39m user[33m.[39m[34mtype[39m(screen[33m.[39m[34mgetByLabelText[39m([32m'Password'[39m[33m,[39m { exact[33m:[39m [35mtrue[39m })…
+[17:23:37] [DEVELOPER][stderr]     [90m 36| [39m    [35mawait[39m user[33m.[39m[34mtype[39m(screen[33m.[39m[34mgetByLabelText[39m([32m'Confirm password'[39m)[33m,[39m [32m'differ[39m…
+[17:23:37] [DEVELOPER][stderr]     [90m 37| [39m    [35mawait[39m user[33m.[39m[34mclick[39m(screen[33m.[39m[34mgetByRole[39m([32m'button'[39m[33m,[39m { name[33m:[39m [32m'Create accoun[39m…
+[17:23:37] [DEVELOPER][stderr]     [90m   | [39m                            [31m^[39m
+[17:23:37] [DEVELOPER][stderr]     [90m 38| [39m    [34mexpect[39m(screen[33m.[39m[34mgetByRole[39m([32m'alert'[39m))[33m.[39m[34mtoHaveTextContent[39m([32m'Passwords do [39m…
+[17:23:37] [DEVELOPER][stderr]     [90m 39| [39m    [34mexpect[39m(api[33m.[39mregister)[33m.[39mnot[33m.[39m[34mtoHaveBeenCalled[39m()
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯[22m[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] [31m[1m[7m FAIL [27m[22m[39m src/App.test.jsx[2m > [22mfrontend flows[2m > [22msigns in, searches vocabulary and reviews a flashcard
+[17:23:37] [DEVELOPER][stderr] [31m[1mTestingLibraryElementError[22m[39m: Unable to find an accessible element with the role "button" and name "Sign in"
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Here are the accessible roles:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   link:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "wordwise ENGLISH, EVERY DAY":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[39m=[32m"brand"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[39m=[32m"/"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Create an account":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[39m=[32m"/register"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   heading:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Make room for new words.":
+[17:23:37] [DEVELOPER][stderr]   [36m<h1 />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Welcome back":
+[17:23:37] [DEVELOPER][stderr]   [36m<h2 />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   emphasis:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<em />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   paragraph:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   textbox:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Username":
+[17:23:37] [DEVELOPER][stderr]   [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]     [33mautocomplete[39m=[32m"username"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]     [33mvalue[39m=[32m"learner"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   button:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Sign in →":
+[17:23:37] [DEVELOPER][stderr]   [36m<button[39m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[39m=[32m"button full"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mtype[39m=[32m"submit"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Ignored nodes: comments, script, style
+[17:23:37] [DEVELOPER][stderr] [36m<body>[39m
+[17:23:37] [DEVELOPER][stderr]   [36m<div>[39m
+[17:23:37] [DEVELOPER][stderr]     [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]       [33mclass[39m=[32m"auth-page"[39m
+[17:23:37] [DEVELOPER][stderr]     [36m>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]         [33mclass[39m=[32m"auth-intro"[39m
+[17:23:37] [DEVELOPER][stderr]       [36m>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[39m=[32m"brand"[39m
+[17:23:37] [DEVELOPER][stderr]           [33mhref[39m=[32m"/"[39m
+[17:23:37] [DEVELOPER][stderr]         [36m>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"brand-mark"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<svg[39m
+[17:23:37] [DEVELOPER][stderr]               [33mclass[39m=[32m"lucide lucide-book-open"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mfill[39m=[32m"none"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mheight[39m=[32m"20"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke[39m=[32m"currentColor"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-linecap[39m=[32m"round"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-linejoin[39m=[32m"round"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-width[39m=[32m"2"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mviewBox[39m=[32m"0 0 24 24"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mwidth[39m=[32m"20"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m>[39m
+[17:23:37] [DEVELOPER][stderr]               [36m<path[39m
+[17:23:37] [DEVELOPER][stderr]                 [33md[39m=[32m"M12 7v14"[39m
+[17:23:37] [DEVELOPER][stderr]               [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]               [36m<path[39m
+[17:23:37] [DEVELOPER][stderr]                 [33md[39m=[32m"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"[39m
+[17:23:37] [DEVELOPER][stderr]               [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m</svg>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mwordwise[0m
+[17:23:37] [DEVELOPER][stderr]             [36m<small>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mENGLISH, EVERY DAY[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</small>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m</a>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<div>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"eyebrow"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mA LITTLE PRACTICE GOES A LONG WAY[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<h1>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mMake room for[0m
+[17:23:37] [DEVELOPER][stderr]             [36m<br />[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<em>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mnew words.[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</em>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</h1>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<p>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mA thoughtful place to learn, review, and make English your own.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</p>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[39m=[32m"auth-footer"[39m
+[17:23:37] [DEVELOPER][stderr]         [36m>[39m
+[17:23:37] [DEVELOPER][stderr]           [0mA little more confident, every day.[0m
+[17:23:37] [DEVELOPER][stderr]         [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]         [33mclass[39m=[32m"auth-form-wrap"[39m
+[17:23:37] [DEVELOPER][stderr]       [36m>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<form[39m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[39m=[32m"auth-form"[39m
+[17:23:37] [DEVELOPER][stderr]         [36m>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"eyebrow"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mYOUR LEARNING SPACE[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<h2>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mWelcome back[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</h2>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<p>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mPick up right where you left off.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</p>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"notice"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mFixture mode: use “learner” or “admin”; changes are temporary.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"field"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mUsername[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[39m=[32m"username"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[39m=[32m"learner"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"field"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mPassword[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[39m=[32m"current-password"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]               [33mtype[39m=[32m"password"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[39m=[32m"password123"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<button[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"button full"[39m
+[17:23:37] [DEVELOPER][stderr]             [33mtype[39m=[32m"submit"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mSign in[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0m→[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</button>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"auth-switch"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mNew to Wordwise?[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]               [33mhref[39m=[32m"/register"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mCreate an account[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</a>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m</form>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]     [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]   [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr] [36m</body>[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[17:23:37] [DEVELOPER][stderr] [36m [2m❯[22m login src/App.test.jsx:[2m29:184[22m[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m src/App.test.jsx:[2m42:50[22m[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/5]⎯[22m[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] [31m[1m[7m FAIL [27m[22m[39m src/App.test.jsx[2m > [22mfrontend flows[2m > [22mshows API errors instead of silently using fixtures
+[17:23:37] [DEVELOPER][stderr] [31m[1mTestingLibraryElementError[22m[39m: Unable to find an accessible element with the role "button" and name "Sign in"
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Here are the accessible roles:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   link:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "wordwise ENGLISH, EVERY DAY":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[39m=[32m"brand"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[39m=[32m"/"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Create an account":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[39m=[32m"/register"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   heading:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Make room for new words.":
+[17:23:37] [DEVELOPER][stderr]   [36m<h1 />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Welcome back":
+[17:23:37] [DEVELOPER][stderr]   [36m<h2 />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   emphasis:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<em />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   paragraph:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   textbox:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Username":
+[17:23:37] [DEVELOPER][stderr]   [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]     [33mautocomplete[39m=[32m"username"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]     [33mvalue[39m=[32m"learner"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   button:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Sign in →":
+[17:23:37] [DEVELOPER][stderr]   [36m<button[39m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[39m=[32m"button full"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mtype[39m=[32m"submit"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Ignored nodes: comments, script, style
+[17:23:37] [DEVELOPER][stderr] [36m<body>[39m
+[17:23:37] [DEVELOPER][stderr]   [36m<div>[39m
+[17:23:37] [DEVELOPER][stderr]     [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]       [33mclass[39m=[32m"auth-page"[39m
+[17:23:37] [DEVELOPER][stderr]     [36m>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]         [33mclass[39m=[32m"auth-intro"[39m
+[17:23:37] [DEVELOPER][stderr]       [36m>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[39m=[32m"brand"[39m
+[17:23:37] [DEVELOPER][stderr]           [33mhref[39m=[32m"/"[39m
+[17:23:37] [DEVELOPER][stderr]         [36m>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"brand-mark"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<svg[39m
+[17:23:37] [DEVELOPER][stderr]               [33mclass[39m=[32m"lucide lucide-book-open"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mfill[39m=[32m"none"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mheight[39m=[32m"20"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke[39m=[32m"currentColor"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-linecap[39m=[32m"round"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-linejoin[39m=[32m"round"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-width[39m=[32m"2"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mviewBox[39m=[32m"0 0 24 24"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mwidth[39m=[32m"20"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m>[39m
+[17:23:37] [DEVELOPER][stderr]               [36m<path[39m
+[17:23:37] [DEVELOPER][stderr]                 [33md[39m=[32m"M12 7v14"[39m
+[17:23:37] [DEVELOPER][stderr]               [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]               [36m<path[39m
+[17:23:37] [DEVELOPER][stderr]                 [33md[39m=[32m"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"[39m
+[17:23:37] [DEVELOPER][stderr]               [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m</svg>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mwordwise[0m
+[17:23:37] [DEVELOPER][stderr]             [36m<small>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mENGLISH, EVERY DAY[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</small>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m</a>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<div>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"eyebrow"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mA LITTLE PRACTICE GOES A LONG WAY[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<h1>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mMake room for[0m
+[17:23:37] [DEVELOPER][stderr]             [36m<br />[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<em>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mnew words.[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</em>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</h1>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<p>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mA thoughtful place to learn, review, and make English your own.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</p>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[39m=[32m"auth-footer"[39m
+[17:23:37] [DEVELOPER][stderr]         [36m>[39m
+[17:23:37] [DEVELOPER][stderr]           [0mA little more confident, every day.[0m
+[17:23:37] [DEVELOPER][stderr]         [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]         [33mclass[39m=[32m"auth-form-wrap"[39m
+[17:23:37] [DEVELOPER][stderr]       [36m>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<form[39m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[39m=[32m"auth-form"[39m
+[17:23:37] [DEVELOPER][stderr]         [36m>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"eyebrow"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mYOUR LEARNING SPACE[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<h2>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mWelcome back[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</h2>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<p>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mPick up right where you left off.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</p>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"notice"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mFixture mode: use “learner” or “admin”; changes are temporary.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"field"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mUsername[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[39m=[32m"username"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[39m=[32m"learner"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"field"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mPassword[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[39m=[32m"current-password"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]               [33mtype[39m=[32m"password"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[39m=[32m"password123"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<button[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"button full"[39m
+[17:23:37] [DEVELOPER][stderr]             [33mtype[39m=[32m"submit"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mSign in[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0m→[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</button>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"auth-switch"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mNew to Wordwise?[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]               [33mhref[39m=[32m"/register"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mCreate an account[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</a>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m</form>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]     [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]   [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr] [36m</body>[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[17:23:37] [DEVELOPER][stderr] [36m [2m❯[22m src/App.test.jsx:[2m58:29[22m[39m
+[17:23:37] [DEVELOPER][stderr]     [90m 56| [39m    [35mawait[39m user[33m.[39m[34mtype[39m(screen[33m.[39m[34mgetByLabelText[39m([32m'Username'[39m)[33m,[39m [32m'learner'[39m)
+[17:23:37] [DEVELOPER][stderr]     [90m 57| [39m    [35mawait[39m user[33m.[39m[34mtype[39m(screen[33m.[39m[34mgetByLabelText[39m([32m'Password'[39m)[33m,[39m [32m'password123'[39m)
+[17:23:37] [DEVELOPER][stderr]     [90m 58| [39m    [35mawait[39m user[33m.[39m[34mclick[39m(screen[33m.[39m[34mgetByRole[39m([32m'button'[39m[33m,[39m { name[33m:[39m [32m'Sign in'[39m }))
+[17:23:37] [DEVELOPER][stderr]     [90m   | [39m                            [31m^[39m
+[17:23:37] [DEVELOPER][stderr]     [90m 59| [39m    [34mexpect[39m([35mawait[39m screen[33m.[39m[34mfindByRole[39m([32m'alert'[39m))[33m.[39m[34mtoHaveTextContent[39m([32m'Invali[39m…
+[17:23:37] [DEVELOPER][stderr]     [90m 60| [39m  })
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/5]⎯[22m[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] [31m[1m[7m FAIL [27m[22m[39m src/App.test.jsx[2m > [22mfrontend flows[2m > [22mshows staff navigation and admin dashboard
+[17:23:37] [DEVELOPER][stderr] [31m[1mTestingLibraryElementError[22m[39m: Unable to find an accessible element with the role "button" and name "Sign in"
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Here are the accessible roles:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   link:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "wordwise ENGLISH, EVERY DAY":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[39m=[32m"brand"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[39m=[32m"/"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Create an account":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[39m=[32m"/register"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   heading:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Make room for new words.":
+[17:23:37] [DEVELOPER][stderr]   [36m<h1 />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Welcome back":
+[17:23:37] [DEVELOPER][stderr]   [36m<h2 />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   emphasis:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<em />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   paragraph:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   textbox:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Username":
+[17:23:37] [DEVELOPER][stderr]   [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]     [33mautocomplete[39m=[32m"username"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]     [33mvalue[39m=[32m"learner"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   button:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Sign in →":
+[17:23:37] [DEVELOPER][stderr]   [36m<button[39m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[39m=[32m"button full"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mtype[39m=[32m"submit"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Ignored nodes: comments, script, style
+[17:23:37] [DEVELOPER][stderr] [36m<body>[39m
+[17:23:37] [DEVELOPER][stderr]   [36m<div>[39m
+[17:23:37] [DEVELOPER][stderr]     [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]       [33mclass[39m=[32m"auth-page"[39m
+[17:23:37] [DEVELOPER][stderr]     [36m>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]         [33mclass[39m=[32m"auth-intro"[39m
+[17:23:37] [DEVELOPER][stderr]       [36m>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[39m=[32m"brand"[39m
+[17:23:37] [DEVELOPER][stderr]           [33mhref[39m=[32m"/"[39m
+[17:23:37] [DEVELOPER][stderr]         [36m>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"brand-mark"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<svg[39m
+[17:23:37] [DEVELOPER][stderr]               [33mclass[39m=[32m"lucide lucide-book-open"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mfill[39m=[32m"none"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mheight[39m=[32m"20"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke[39m=[32m"currentColor"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-linecap[39m=[32m"round"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-linejoin[39m=[32m"round"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mstroke-width[39m=[32m"2"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mviewBox[39m=[32m"0 0 24 24"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mwidth[39m=[32m"20"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m>[39m
+[17:23:37] [DEVELOPER][stderr]               [36m<path[39m
+[17:23:37] [DEVELOPER][stderr]                 [33md[39m=[32m"M12 7v14"[39m
+[17:23:37] [DEVELOPER][stderr]               [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]               [36m<path[39m
+[17:23:37] [DEVELOPER][stderr]                 [33md[39m=[32m"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"[39m
+[17:23:37] [DEVELOPER][stderr]               [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m</svg>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mwordwise[0m
+[17:23:37] [DEVELOPER][stderr]             [36m<small>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mENGLISH, EVERY DAY[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</small>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m</a>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<div>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"eyebrow"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mA LITTLE PRACTICE GOES A LONG WAY[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<h1>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mMake room for[0m
+[17:23:37] [DEVELOPER][stderr]             [36m<br />[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<em>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mnew words.[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</em>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</h1>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<p>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mA thoughtful place to learn, review, and make English your own.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</p>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[39m=[32m"auth-footer"[39m
+[17:23:37] [DEVELOPER][stderr]         [36m>[39m
+[17:23:37] [DEVELOPER][stderr]           [0mA little more confident, every day.[0m
+[17:23:37] [DEVELOPER][stderr]         [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]         [33mclass[39m=[32m"auth-form-wrap"[39m
+[17:23:37] [DEVELOPER][stderr]       [36m>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m<form[39m
+[17:23:37] [DEVELOPER][stderr]           [33mclass[39m=[32m"auth-form"[39m
+[17:23:37] [DEVELOPER][stderr]         [36m>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"eyebrow"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mYOUR LEARNING SPACE[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<h2>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mWelcome back[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</h2>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<p>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mPick up right where you left off.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</p>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"notice"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mFixture mode: use “learner” or “admin”; changes are temporary.[0m
+[17:23:37] [DEVELOPER][stderr]           [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"field"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mUsername[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[39m=[32m"username"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[39m=[32m"learner"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<label[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"field"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mPassword[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]             [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]               [33mautocomplete[39m=[32m"current-password"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]               [33mtype[39m=[32m"password"[39m
+[17:23:37] [DEVELOPER][stderr]               [33mvalue[39m=[32m"password123"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m/>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</label>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<button[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"button full"[39m
+[17:23:37] [DEVELOPER][stderr]             [33mtype[39m=[32m"submit"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mSign in[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:37] [DEVELOPER][stderr]               [0m→[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</button>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m<div[39m
+[17:23:37] [DEVELOPER][stderr]             [33mclass[39m=[32m"auth-switch"[39m
+[17:23:37] [DEVELOPER][stderr]           [36m>[39m
+[17:23:37] [DEVELOPER][stderr]             [0mNew to Wordwise?[0m
+[17:23:37] [DEVELOPER][stderr]             [0m [0m
+[17:23:37] [DEVELOPER][stderr]             [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]               [33mhref[39m=[32m"/register"[39m
+[17:23:37] [DEVELOPER][stderr]             [36m>[39m
+[17:23:37] [DEVELOPER][stderr]               [0mCreate an account[0m
+[17:23:37] [DEVELOPER][stderr]             [36m</a>[39m
+[17:23:37] [DEVELOPER][stderr]           [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]         [36m</form>[39m
+[17:23:37] [DEVELOPER][stderr]       [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]     [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr]   [36m</div>[39m
+[17:23:37] [DEVELOPER][stderr] [36m</body>[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[17:23:37] [DEVELOPER][stderr] [36m [2m❯[22m login src/App.test.jsx:[2m29:184[22m[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] [90m [2m❯[22m src/App.test.jsx:[2m64:50[22m[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/5]⎯[22m[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] [31m[1m[7m FAIL [27m[22m[39m src/App.test.jsx[2m > [22mfrontend flows[2m > [22mrequires answers before submitting a quiz
+[17:23:37] [DEVELOPER][stderr] [31m[1mTestingLibraryElementError[22m[39m: Unable to find an accessible element with the role "button" and name "Sign in"
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Here are the accessible roles:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   link:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "wordwise ENGLISH, EVERY DAY":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[39m=[32m"brand"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[39m=[32m"/"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Create an account":
+[17:23:37] [DEVELOPER][stderr]   [36m<a[39m
+[17:23:37] [DEVELOPER][stderr]     [33mhref[39m=[32m"/register"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   heading:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Make room for new words.":
+[17:23:37] [DEVELOPER][stderr]   [36m<h1 />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Welcome back":
+[17:23:37] [DEVELOPER][stderr]   [36m<h2 />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   emphasis:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<em />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   paragraph:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "":
+[17:23:37] [DEVELOPER][stderr]   [36m<p />[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   textbox:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Username":
+[17:23:37] [DEVELOPER][stderr]   [36m<input[39m
+[17:23:37] [DEVELOPER][stderr]     [33mautocomplete[39m=[32m"username"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mrequired[39m=[32m""[39m
+[17:23:37] [DEVELOPER][stderr]     [33mvalue[39m=[32m"learner"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr]   button:
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   Name "Sign in →":
+[17:23:37] [DEVELOPER][stderr]   [36m<button[39m
+[17:23:37] [DEVELOPER][stderr]     [33mclass[39m=[32m"button full"[39m
+[17:23:37] [DEVELOPER][stderr]     [33mtype[39m=[32m"submit"[39m
+[17:23:37] [DEVELOPER][stderr]   [36m/>[39m
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr]   --------------------------------------------------
+[17:23:37] [DEVELOPER][stderr] 
+[17:23:37] [DEVELOPER][stderr] Ignored nodes: comments, script, style
+[17:23:37] [DEVELOPER][stderr] [36m<body>[39m
+[17:23:37] [DEVELOPER][stderr]   [36m<div>[39m
+[17:23:38] [DEVELOPER][stderr]     [36m<div[39m
+[17:23:38] [DEVELOPER][stderr]       [33mclass[39m=[32m"auth-page"[39m
+[17:23:38] [DEVELOPER][stderr]     [36m>[39m
+[17:23:38] [DEVELOPER][stderr]       [36m<div[39m
+[17:23:38] [DEVELOPER][stderr]         [33mclass[39m=[32m"auth-intro"[39m
+[17:23:38] [DEVELOPER][stderr]       [36m>[39m
+[17:23:38] [DEVELOPER][stderr]         [36m<a[39m
+[17:23:38] [DEVELOPER][stderr]           [33mclass[39m=[32m"brand"[39m
+[17:23:38] [DEVELOPER][stderr]           [33mhref[39m=[32m"/"[39m
+[17:23:38] [DEVELOPER][stderr]         [36m>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:38] [DEVELOPER][stderr]             [33mclass[39m=[32m"brand-mark"[39m
+[17:23:38] [DEVELOPER][stderr]           [36m>[39m
+[17:23:38] [DEVELOPER][stderr]             [36m<svg[39m
+[17:23:38] [DEVELOPER][stderr]               [33mclass[39m=[32m"lucide lucide-book-open"[39m
+[17:23:38] [DEVELOPER][stderr]               [33mfill[39m=[32m"none"[39m
+[17:23:38] [DEVELOPER][stderr]               [33mheight[39m=[32m"20"[39m
+[17:23:38] [DEVELOPER][stderr]               [33mstroke[39m=[32m"currentColor"[39m
+[17:23:38] [DEVELOPER][stderr]               [33mstroke-linecap[39m=[32m"round"[39m
+[17:23:38] [DEVELOPER][stderr]               [33mstroke-linejoin[39m=[32m"round"[39m
+[17:23:38] [DEVELOPER][stderr]               [33mstroke-width[39m=[32m"2"[39m
+[17:23:38] [DEVELOPER][stderr]               [33mviewBox[39m=[32m"0 0 24 24"[39m
+[17:23:38] [DEVELOPER][stderr]               [33mwidth[39m=[32m"20"[39m
+[17:23:38] [DEVELOPER][stderr]               [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+[17:23:38] [DEVELOPER][stderr]             [36m>[39m
+[17:23:38] [DEVELOPER][stderr]               [36m<path[39m
+[17:23:38] [DEVELOPER][stderr]                 [33md[39m=[32m"M12 7v14"[39m
+[17:23:38] [DEVELOPER][stderr]               [36m/>[39m
+[17:23:38] [DEVELOPER][stderr]               [36m<path[39m
+[17:23:38] [DEVELOPER][stderr]                 [33md[39m=[32m"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"[39m
+[17:23:38] [DEVELOPER][stderr]               [36m/>[39m
+[17:23:38] [DEVELOPER][stderr]             [36m</svg>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m<span>[39m
+[17:23:38] [DEVELOPER][stderr]             [0mwordwise[0m
+[17:23:38] [DEVELOPER][stderr]             [36m<small>[39m
+[17:23:38] [DEVELOPER][stderr]               [0mENGLISH, EVERY DAY[0m
+[17:23:38] [DEVELOPER][stderr]             [36m</small>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:38] [DEVELOPER][stderr]         [36m</a>[39m
+[17:23:38] [DEVELOPER][stderr]         [36m<div>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:38] [DEVELOPER][stderr]             [33mclass[39m=[32m"eyebrow"[39m
+[17:23:38] [DEVELOPER][stderr]           [36m>[39m
+[17:23:38] [DEVELOPER][stderr]             [0mA LITTLE PRACTICE GOES A LONG WAY[0m
+[17:23:38] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m<h1>[39m
+[17:23:38] [DEVELOPER][stderr]             [0mMake room for[0m
+[17:23:38] [DEVELOPER][stderr]             [36m<br />[39m
+[17:23:38] [DEVELOPER][stderr]             [36m<em>[39m
+[17:23:38] [DEVELOPER][stderr]               [0mnew words.[0m
+[17:23:38] [DEVELOPER][stderr]             [36m</em>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m</h1>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m<p>[39m
+[17:23:38] [DEVELOPER][stderr]             [0mA thoughtful place to learn, review, and make English your own.[0m
+[17:23:38] [DEVELOPER][stderr]           [36m</p>[39m
+[17:23:38] [DEVELOPER][stderr]         [36m</div>[39m
+[17:23:38] [DEVELOPER][stderr]         [36m<span[39m
+[17:23:38] [DEVELOPER][stderr]           [33mclass[39m=[32m"auth-footer"[39m
+[17:23:38] [DEVELOPER][stderr]         [36m>[39m
+[17:23:38] [DEVELOPER][stderr]           [0mA little more confident, every day.[0m
+[17:23:38] [DEVELOPER][stderr]         [36m</span>[39m
+[17:23:38] [DEVELOPER][stderr]       [36m</div>[39m
+[17:23:38] [DEVELOPER][stderr]       [36m<div[39m
+[17:23:38] [DEVELOPER][stderr]         [33mclass[39m=[32m"auth-form-wrap"[39m
+[17:23:38] [DEVELOPER][stderr]       [36m>[39m
+[17:23:38] [DEVELOPER][stderr]         [36m<form[39m
+[17:23:38] [DEVELOPER][stderr]           [33mclass[39m=[32m"auth-form"[39m
+[17:23:38] [DEVELOPER][stderr]         [36m>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m<span[39m
+[17:23:38] [DEVELOPER][stderr]             [33mclass[39m=[32m"eyebrow"[39m
+[17:23:38] [DEVELOPER][stderr]           [36m>[39m
+[17:23:38] [DEVELOPER][stderr]             [0mYOUR LEARNING SPACE[0m
+[17:23:38] [DEVELOPER][stderr]           [36m</span>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m<h2>[39m
+[17:23:38] [DEVELOPER][stderr]             [0mWelcome back[0m
+[17:23:38] [DEVELOPER][stderr]           [36m</h2>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m<p>[39m
+[17:23:38] [DEVELOPER][stderr]             [0mPick up right where you left off.[0m
+[17:23:38] [DEVELOPER][stderr]           [36m</p>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m<div[39m
+[17:23:38] [DEVELOPER][stderr]             [33mclass[39m=[32m"notice"[39m
+[17:23:38] [DEVELOPER][stderr]           [36m>[39m
+[17:23:38] [DEVELOPER][stderr]             [0mFixture mode: use “learner” or “admin”; changes are temporary.[0m
+[17:23:38] [DEVELOPER][stderr]           [36m</div>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m<label[39m
+[17:23:38] [DEVELOPER][stderr]             [33mclass[39m=[32m"field"[39m
+[17:23:38] [DEVELOPER][stderr]           [36m>[39m
+[17:23:38] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:38] [DEVELOPER][stderr]               [0mUsername[0m
+[17:23:38] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:38] [DEVELOPER][stderr]             [36m<input[39m
+[17:23:38] [DEVELOPER][stderr]               [33mautocomplete[39m=[32m"username"[39m
+[17:23:38] [DEVELOPER][stderr]               [33mrequired[39m=[32m""[39m
+[17:23:38] [DEVELOPER][stderr]               [33mvalue[39m=[32m"learner"[39m
+[17:23:38] [DEVELOPER][stderr]             [36m/>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m</label>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m<label[39m
+[17:23:38] [DEVELOPER][stderr]             [33mclass[39m=[32m"field"[39m
+[17:23:38] [DEVELOPER][stderr]           [36m>[39m
+[17:23:38] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:38] [DEVELOPER][stderr]               [0mPassword[0m
+[17:23:38] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:38] [DEVELOPER][stderr]             [36m<input[39m
+[17:23:38] [DEVELOPER][stderr]               [33mautocomplete[39m=[32m"current-password"[39m
+[17:23:38] [DEVELOPER][stderr]               [33mrequired[39m=[32m""[39m
+[17:23:38] [DEVELOPER][stderr]               [33mtype[39m=[32m"password"[39m
+[17:23:38] [DEVELOPER][stderr]               [33mvalue[39m=[32m"password123"[39m
+[17:23:38] [DEVELOPER][stderr]             [36m/>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m</label>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m<button[39m
+[17:23:38] [DEVELOPER][stderr]             [33mclass[39m=[32m"button full"[39m
+[17:23:38] [DEVELOPER][stderr]             [33mtype[39m=[32m"submit"[39m
+[17:23:38] [DEVELOPER][stderr]           [36m>[39m
+[17:23:38] [DEVELOPER][stderr]             [0mSign in[0m
+[17:23:38] [DEVELOPER][stderr]             [0m [0m
+[17:23:38] [DEVELOPER][stderr]             [36m<span>[39m
+[17:23:38] [DEVELOPER][stderr]               [0m→[0m
+[17:23:38] [DEVELOPER][stderr]             [36m</span>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m</button>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m<div[39m
+[17:23:38] [DEVELOPER][stderr]             [33mclass[39m=[32m"auth-switch"[39m
+[17:23:38] [DEVELOPER][stderr]           [36m>[39m
+[17:23:38] [DEVELOPER][stderr]             [0mNew to Wordwise?[0m
+[17:23:38] [DEVELOPER][stderr]             [0m [0m
+[17:23:38] [DEVELOPER][stderr]             [36m<a[39m
+[17:23:38] [DEVELOPER][stderr]               [33mhref[39m=[32m"/register"[39m
+[17:23:38] [DEVELOPER][stderr]             [36m>[39m
+[17:23:38] [DEVELOPER][stderr]               [0mCreate an account[0m
+[17:23:38] [DEVELOPER][stderr]             [36m</a>[39m
+[17:23:38] [DEVELOPER][stderr]           [36m</div>[39m
+[17:23:38] [DEVELOPER][stderr]         [36m</form>[39m
+[17:23:38] [DEVELOPER][stderr]       [36m</div>[39m
+[17:23:38] [DEVELOPER][stderr]     [36m</div>[39m
+[17:23:38] [DEVELOPER][stderr]   [36m</div>[39m
+[17:23:38] [DEVELOPER][stderr] [36m</body>[39m
+[17:23:38] [DEVELOPER][stderr] [90m [2m❯[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[17:23:38] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[17:23:38] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[17:23:38] [DEVELOPER][stderr] [90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[17:23:38] [DEVELOPER][stderr] [36m [2m❯[22m login src/App.test.jsx:[2m29:184[22m[39m
+[17:23:38] [DEVELOPER][stderr] 
+[17:23:38] [DEVELOPER][stderr] [90m [2m❯[22m src/App.test.jsx:[2m72:50[22m[39m
+[17:23:38] [DEVELOPER][stderr] 
+[17:23:38] [DEVELOPER][stderr] [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/5]⎯[22m[39m
+[17:23:38] [DEVELOPER][stderr] 
+[17:23:38] [DEVELOPER][stderr] [2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[17:23:38] [DEVELOPER][stderr] [2m      Tests [22m [1m[31m5 failed[39m[22m[90m (5)[39m
+[17:23:38] [DEVELOPER][stderr] [2m   Start at [22m 17:23:32
+[17:23:38] [DEVELOPER][stderr] [2m   Duration [22m 4.45s[2m (transform 120ms, setup 81ms, collect 355ms, tests 2.93s, environment 504ms, prepare 76ms)[22m
+[17:23:38] [DEVELOPER][stderr] 
+[17:23:38] [DEVELOPER][stderr] 
+[17:23:38] [DEVELOPER][stderr] [showing lines 616-2166 of 2166; full output saved to C:\Users\USER\.local\share\opencode\shell\86c20ff01504f3b3bb0d4df10ddabe50e32915dc\sh_20d1506dc001dNqATSek6DxPkQ.out]
+[17:23:40] [DEVELOPER][stderr] > build · gpt-6.1-terra
+[17:23:42] [DEVELOPER][stderr] [0m$ [0m(Get-Content src/App.test.jsx -Raw).Replace("name: 'Sign in'", "name: /Sign in/").Replace("name: 'Create account'", "name: /Create account/") | Set-Content src/App.test.jsx
+[17:23:42] [DEVELOPER][stderr] (no output)
+[17:23:45] [DEVELOPER][stderr] > build · gpt-6.1-terra
+[17:23:47] DEVELOPER: process still running | 370s
+[17:23:52] [DEVELOPER][stderr] [0m$ [0mnpm test
+[17:23:52] [DEVELOPER][stderr] > learnenglish-frontend@0.1.0 test
+[17:23:52] [DEVELOPER][stderr] > vitest run
+[17:23:52] [DEVELOPER][stderr] 
+[17:23:52] [DEVELOPER][stderr] 
+[17:23:52] [DEVELOPER][stderr] [1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mD:/ProjectPerson/LearnEnglish/frontend[39m
+[17:23:52] [DEVELOPER][stderr] 
+[17:23:52] [DEVELOPER][stderr] [90mstderr[2m | src/App.test.jsx[2m > [22m[2mfrontend flows[2m > [22m[2mvalidates registration passwords
+[17:23:52] [DEVELOPER][stderr] [22m[39m⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+[17:23:52] [DEVELOPER][stderr] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+[17:23:52] [DEVELOPER][stderr] 
+[17:23:52] [DEVELOPER][stderr]  [32m✓[39m src/App.test.jsx [2m([22m[2m5 tests[22m[2m)[22m[33m 3739[2mms[22m[39m
+[17:23:52] [DEVELOPER][stderr]    [33m[2m✓[22m[39m frontend flows[2m > [22mvalidates registration passwords [33m1028[2mms[22m[39m
+[17:23:52] [DEVELOPER][stderr]    [33m[2m✓[22m[39m frontend flows[2m > [22msigns in, searches vocabulary and reviews a flashcard [33m847[2mms[22m[39m
+[17:23:52] [DEVELOPER][stderr]    [33m[2m✓[22m[39m frontend flows[2m > [22mshows API errors instead of silently using fixtures [33m511[2mms[22m[39m
+[17:23:52] [DEVELOPER][stderr]    [33m[2m✓[22m[39m frontend flows[2m > [22mshows staff navigation and admin dashboard [33m535[2mms[22m[39m
+[17:23:52] [DEVELOPER][stderr]    [33m[2m✓[22m[39m frontend flows[2m > [22mrequires answers before submitting a quiz [33m816[2mms[22m[39m
+[17:23:52] [DEVELOPER][stderr] 
+[17:23:52] [DEVELOPER][stderr] [2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[17:23:52] [DEVELOPER][stderr] [2m      Tests [22m [1m[32m5 passed[39m[22m[90m (5)[39m
+[17:23:52] [DEVELOPER][stderr] [2m   Start at [22m 17:23:46
+[17:23:52] [DEVELOPER][stderr] [2m   Duration [22m 4.90s[2m (transform 105ms, setup 65ms, collect 314ms, tests 3.74s, environment 392ms, prepare 116ms)[22m
+[17:23:55] [DEVELOPER][stderr] > build · gpt-6.1-terra
+[17:23:57] DEVELOPER: process still running | 380s
+[17:24:01] [DEVELOPER][stdout] Created the frontend-only React, Vite and Tailwind application in `frontend/`. It includes learner and admin screens, reusable components, an API service layer, and explicitly enabled in-memory fixtures for independent UI development.
+[17:24:01] [DEVELOPER][stdout] 
+[17:24:01] [DEVELOPER][stdout] **Verification**
+[17:24:01] [DEVELOPER][stdout] - `npm test`: **5 tests passed**, covering validation, login error handling, vocabulary search, flashcard review, staff navigation and quiz submission.
+[17:24:01] [DEVELOPER][stdout] - `npm run build`: **passed**.
+[17:24:01] [DEVELOPER][stdout] - Browser visual checks were **not performed**. The development server was not started or independently verified.
+[17:24:01] [DEVELOPER][stdout] - `npm install` reported **8 dependency vulnerabilities**: 5 moderate, 1 high and 2 critical. No forced upgrade was applied.
+[17:24:01] [DEVELOPER][stdout] 
+[17:24:01] [DEVELOPER][stdout] **Integration limits:** The API contract is proposed and was not tested against a backend. Fixture data resets on reload and must be removed during integration. Real logout currently clears client tokens only; server-side revocation remains to be implemented. Backend, MySQL and Docker were not accessed.
+[17:24:01] [DEVELOPER][stdout] 
+[17:24:01] [DEVELOPER][stdout] **Files created**
+[17:24:01] [DEVELOPER][stdout] - `frontend/package.json`, `package-lock.json`, `.gitignore`, `index.html`, `vite.config.js`, `tailwind.config.js`, `postcss.config.js`, `README.md`
+[17:24:01] [DEVELOPER][stdout] - `frontend/src/main.jsx`, `App.jsx`, `pages.jsx`, `styles.css`, `App.test.jsx`
+[17:24:01] [DEVELOPER][stdout] - `frontend/src/components/Layout.jsx`, `UI.jsx`
+[17:24:01] [DEVELOPER][stdout] - `frontend/src/services/client.js`, `api.js`, `fixtures.js`
+[17:24:01] [DEVELOPER][stdout] - `frontend/src/test/setup.js`
+[17:24:01] [DEVELOPER][stdout] 
+[17:24:01] [DEVELOPER][stdout] **Commands executed:** `node --version`, `npm --version`, `npm install`, `npm test` (initially failed due to button-name test selectors; passed after correction), `npm run build`, and a PowerShell `Get-Content`/`Set-Content` replacement to correct those test selectors.
+[17:24:02] DEVELOPER: exit=0, duration=385s
